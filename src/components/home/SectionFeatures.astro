@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+
+import iconEntregas from "@assets/svg/iconEntregas.svg";
+import iconSettings from "@assets/svg/iconSettings.svg";
+import iconSoporte from "@assets/svg/iconSoporte.svg";
+
+interface Feature {
+  title: string;
+  description: string;
+  icon: ImageMetadata;
+}
+
+const features: Feature[] = [
+  {
+    title: "Entregas rápidas",
+    description:
+      "Recibe tus equipos justo cuando los necesitas. Nuestro proceso logístico garantiza entregas ágiles en todo el país.",
+    icon: iconEntregas,
+  },
+  {
+    title: "Equipos preconfigurados",
+    description:
+      "Te entregamos todo listo para usarse desde el primer encendido. Ahorra tiempo con configuraciones previas según tus necesidades.",
+    icon: iconSettings,
+  },
+  {
+    title: "Soporte técnico",
+    description:
+      "Tendrás a un experto disponible para ayudarte en días y horas hábiles. Atención inmediata sin interrupciones.",
+    icon: iconSoporte,
+  },
+];
+---
+
+<section class="w-full pb-16 px-4">
+  <div class="container mx-auto grid md:grid-cols-3 gap-6 lg:gap-12">
+    {
+      features.map((feature) => (
+        <div class="rounded-2xl px-8 md:px-16 py-12 bg-gradient-to-br from-[#DBE6F7]/40 to-[#F4F6F9]/10 text-primary-1">
+          <Image
+            src={feature.icon}
+            alt={feature.title}
+            class="size-12 lg:size-14 mb-4"
+          />
+          <h3 class="font-medium font-inter text-base md:text-lg mb-1 text-secondary-1">
+            {feature.title}
+          </h3>
+          <p class="font-inter font-light text-base lg:text-lg leading-relaxed text-primary-1">
+            {feature.description}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</section>

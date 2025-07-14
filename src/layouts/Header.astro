@@ -31,28 +31,28 @@ const { type = "default" } = Astro.props;
       class="w-full lg:w-auto
     flex items-center justify-center lg:justify-start"
     >
-      <a
-        href="/"
-        class="flex items-center gap-2 lg:gap-4 text-primary-1 font-bold text-xl lg:text-2xl xl:text-3xl"
-      >
-        <Image class=`h-6 md:h-12 w-auto` src={svgLogo} alt="logo" />
+      <a href="/" class="inline-block">
+        <Image class=`w-auto object-cover` src={svgLogo} alt="logo" />
       </a>
     </div>
 
     <nav
       id="navigator-menu"
-      class="fixed -top-full left-0 right-0 lg:top-0 lg:left-auto lg:right-auto
+      class="fixed z-30 -top-full left-0 right-0 lg:top-0 lg:left-auto lg:right-auto
       flex flex-col items-center justify-center shadow lg:shadow-none p-6 py-8 lg:p-0 lg:py-0
       transition-[top] duration-300 ease-in-out lg:transition-none
       lg:static lg:flex-1 lg:flex lg:items-center lg:gap-4 lg:pt-1 bg-white lg:bg-transparent"
       aria-label="Main navigation"
     >
       <ul
-        class=`h-full container flex flex-col lg:flex-row items-center justify-end gap-8 lg:gap-14
+        class=`h-full container flex flex-col lg:flex-row items-center justify-end lg:justify-center  gap-8 lg:gap-4 xl:gap-12
         [&>li>a]:text-primary-1 lg:[&>li]:text-center
         [&>li>a]:relative [&>li>a]:uppercase [&>li]:inline-block
-        font-normal text-base lg:text-lg xl:text-xl`
+        font-normal text-base xl:text-lg`
       >
+        <li>
+          <a href={"/#productos"}>Inicio</a>
+        </li>
         <li>
           <a href={"/#productos"}>Productos</a>
         </li>
@@ -60,17 +60,30 @@ const { type = "default" } = Astro.props;
           <a href={"/#nosotros"}>Nosotros</a>
         </li>
         <li>
+          <a href={"/#nosotros"}>Distribuidores</a>
+        </li>
+        <li>
           <a href={"/#contacto"}>Contacto</a>
         </li>
         <li>
+          <a href={"/#contacto"}>Soporte</a>
+        </li>
+        <li class="lg:!hidden">
           <a
-            class="px-4 py-2 rounded-full bg-primary-3 !text-neutral-3"
+            class="inline-block lg:hidden px-4 py-2 rounded-full bg-primary-1 !text-neutral-3"
             href={"https://meetings.hubspot.com/jtorres44"}
             >Agenda presentación</a
           >
         </li>
       </ul>
     </nav>
+
+    <a
+      class="uppercase hidden lg:inline-block text-center
+      px-4 py-2 rounded-full bg-primary-1 text-neutral-3
+      text-base xl:text-lg"
+      href={"https://meetings.hubspot.com/jtorres44"}>Agenda presentación</a
+    >
   </div>
 </header>
 

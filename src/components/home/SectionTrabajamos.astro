@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+
+import logo1 from "@assets/svg/carousel/1.svg";
+import logo2 from "@assets/svg/carousel/2.svg";
+import logo3 from "@assets/svg/carousel/3.svg";
+import logo4 from "@assets/svg/carousel/4.svg";
+import logo5 from "@assets/svg/carousel/5.svg";
+import logo6 from "@assets/svg/carousel/6.svg";
+import logo7 from "@assets/svg/carousel/7.svg";
+import logo8 from "@assets/svg/carousel/8.svg";
+import logo9 from "@assets/svg/carousel/9.svg";
+import logo10 from "@assets/svg/carousel/10.svg";
+
+const logos = [
+  logo1,
+  logo2,
+  logo3,
+  logo4,
+  logo5,
+  logo6,
+  logo7,
+  logo8,
+  logo9,
+  logo10,
+];
+---
+
+<section class="container mx-auto py-16 overflow-hidden">
+  <div class="container mx-auto mb-6 text-center">
+    <h2 class="text-primary-1 text-xl md:text-2xl font-medium mb-10">
+      TRABAJAMOS CON
+    </h2>
+  </div>
+  <div class="relative w-full overflow-hidden">
+    <div
+      class="flex w-max animate-slide gap-12 px-8"
+      style="animation: scroll 30s linear infinite"
+    >
+      {
+        logos
+          .concat(logos)
+          .map((logo, index) => (
+            <Image
+              src={logo}
+              alt={`Logo ${index + 1}`}
+              class="h-12 w-auto object-contain shrink-0"
+            />
+          ))
+      }
+    </div>
+  </div>
+
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</section>

@@ -1,0 +1,90 @@
+---
+import { Image } from "astro:assets";
+
+import image1 from "@assets/img/home/card/software.png";
+import image2 from "@assets/img/home/card/servidores.png";
+import image3 from "@assets/img/home/card/monitores.png";
+import image4 from "@assets/img/home/card/publicadores.png";
+import certiSoft from "@assets/img/home/card/certiSoft.png";
+import certServer from "@assets/img/home/card/certiServers.png";
+import certMonitores from "@assets/img/home/card/certiMonitores.png";
+import certPublicadores from "@assets/img/home/card/certiPubli.png";
+
+interface Card {
+  title: string;
+  description: string;
+  image: ImageMetadata;
+  link: string;
+  certificationImg?: ImageMetadata;
+}
+
+const cardList: Card[] = [
+  {
+    title: "Software Médico",
+    description:
+      "Soluciones digitales seguras para compartir imágenes clínicas, accesibles desde cualquier dispositivo e integradas con RIS, PACS y portales de pacientes.",
+    image: image1,
+    link: "https://perennity.mx/",
+    certificationImg: certiSoft,
+  },
+  {
+    title: "Servidores",
+    description:
+      "Equipos robustos 24/7 para entornos exigentes, con alto rendimiento, seguridad y escalabilidad en la gestión médica y de datos.",
+    image: image2,
+    link: "https://nobilis.com.mx/",
+    certificationImg: certServer,
+  },
+  {
+    title: "Monitores de grado médico",
+    description:
+      "Pantallas clínicas de alta resolución con DICOM, baja luz azul y ajuste ambiental, brindan precisión, confort y rendimiento continuo para el diagnóstico.",
+    image: image3,
+    link: "https://beacon.com.mx/",
+    certificationImg: certMonitores,
+  },
+  {
+    title: "Publicadores",
+    description:
+      "Sistemas para grabación y distribución de estudios en CD, DVD o USB, respaldo físico, trazabilidad, acceso sencillo para pacientes y especialistas.",
+    image: image4,
+    link: "https://rimage.mx/",
+    certificationImg: certPublicadores,
+  },
+];
+---
+
+<section class="container mx-auto px-4 lg:px-0 py-32 grid gap-6 md:grid-cols-2">
+  {
+    cardList.map((card) => (
+      <a
+        href={card.link}
+        target="_blank"
+        class="group flex flex-col md:flex-row items-center md:items-start gap-6 lg:gap-12 px-6 py-12
+        bg-[#f9f9f9] rounded-[20px] transition shadow-sm hover:shadow-md hover:ring-2 hover:ring-primary-3 hover:-translate-y-1 text-left"
+      >
+        <Image
+          src={card.image}
+          alt={card.title}
+          class="w-32 md:w-40 object-contain"
+        />
+        <div class="flex-1 text-primary-1">
+          <h3 class="font-inter text-base md:text-lg font-medium mb-1 leading-snug">
+            {card.title}
+          </h3>
+          <p class="font-inter text-base font-light leading-relaxed mb-4 text-secondary-1">
+            {card.description}
+          </p>
+
+          {card.certificationImg && (
+            <Image
+              src={card.certificationImg}
+              alt="Certificaciones"
+              class="max-h-6 md:max-h-8 w-auto object-contain"
+            />
+          )}
+        </div>
+      </a>
+    ))
+  }
+</section>
