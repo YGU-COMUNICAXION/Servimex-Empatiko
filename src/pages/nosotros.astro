@@ -2,9 +2,11 @@
 import Layout from "@layouts/Layout.astro";
 import HeroNosotros from "@components/nosotros/HeroNosotros.astro";
 import SectionPortafolio from "@components/nosotros/SectionPortafolio.astro";
+import SliderExitos from "@components/nosotros/SliderExitos";
 ---
 
 <Layout title="Nosotros" description="Empatiko">
   <HeroNosotros />
   <SectionPortafolio />
+  <SliderExitos client:visible />
 </Layout>
