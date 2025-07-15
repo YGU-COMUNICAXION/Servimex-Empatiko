@@ -47,26 +47,26 @@ const { type = "default" } = Astro.props;
       <ul
         class=`h-full container flex flex-col lg:flex-row items-center justify-end lg:justify-center  gap-8 lg:gap-4 xl:gap-12
         [&>li>a]:text-primary-1 lg:[&>li]:text-center
-        [&>li>a]:relative [&>li>a]:uppercase [&>li]:inline-block
+        [&>li>a]:relative [&>li>a]:uppercase [&>li>a]:py-2 [&>li]:inline-block
         font-normal text-base xl:text-lg`
       >
         <li>
-          <a href={"/#productos"}>Inicio</a>
+          <a href={"/"}>Inicio</a>
         </li>
         <li>
-          <a href={"/#productos"}>Productos</a>
+          <a href={"/productos"}>Productos</a>
         </li>
         <li>
-          <a href={"/#nosotros"}>Nosotros</a>
+          <a href={"/nosotros"}>Nosotros</a>
         </li>
         <li>
-          <a href={"/#nosotros"}>Distribuidores</a>
+          <a href={"/distribuidores"}>Distribuidores</a>
         </li>
         <li>
-          <a href={"/#contacto"}>Contacto</a>
+          <a href={"/contacto"}>Contacto</a>
         </li>
         <li>
-          <a href={"/#contacto"}>Soporte</a>
+          <a href={"/soporte"}>Soporte</a>
         </li>
         <li class="lg:!hidden">
           <a
@@ -93,6 +93,8 @@ const { type = "default" } = Astro.props;
   /* Colocar linea color roja del link activo por debajo del link, pero en desktop colocar la linea encima del link */
   #navigator-menu a:is(.active) {
     font-weight: 600;
+    /* padding-bottom: 0.25rem; */
+    border-bottom: 2px solid #263344;
   }
 </style>
 
@@ -124,14 +126,14 @@ const { type = "default" } = Astro.props;
       navigatorMenu.classList.toggle("top-16");
     });
 
-    // const path = window.location.pathname;
-    // const links = navigatorLinks?.querySelectorAll("a");
+    const path = window.location.pathname;
+    const links = navigatorLinks?.querySelectorAll("a");
 
-    // links?.forEach((link) => {
-    //   if (link.pathname === path) {
-    //     console.log(link.pathname);
-    //     link.classList.add("active");
-    //   }
-    // });
+    links?.forEach((link) => {
+      if (link.pathname === path) {
+        console.log(link.pathname);
+        link.classList.add("active");
+      }
+    });
   });
 </script>
