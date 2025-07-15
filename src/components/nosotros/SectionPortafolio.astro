@@ -1,0 +1,48 @@
+---
+import servidoresImg from "@assets/img/nosotros/servidores.jpg";
+import estacionesImg from "@assets/img/nosotros/estaciones.jpg";
+import softwareImg from "@assets/img/nosotros/software.jpg";
+import visualizacionImg from "@assets/img/nosotros/sistema.jpg";
+import almacenamientoImg from "@assets/img/nosotros/almacenamiento.jpg";
+import { Image } from "astro:assets";
+
+const productos = [
+  { label: "Servidores", img: servidoresImg },
+  { label: "Estaciones de trabajo", img: estacionesImg },
+  { label: "Software Especializado", img: softwareImg },
+  { label: "Sistema de visualización", img: visualizacionImg },
+  { label: "Almacenamiento", img: almacenamientoImg },
+];
+---
+
+<section class="w-full bg-white px-4 py-16 md:py-24">
+  <div class="container mx-auto text-center">
+    <h2
+      class="text-secondary-1 font-medium text-lg md:text-xl lg:text-2xl mb-12"
+    >
+      Ofrecemos un portafolio completo que incluye
+    </h2>
+    <div
+      class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-10"
+    >
+      {
+        productos.map(({ img, label }) => (
+          <div class="relative w-full h-96 rounded-2xl overflow-hidden shadow-md">
+            <Image src={img} alt={label} class="object-cover w-full h-full" />
+            <div class="absolute top-0 bottom-0 left-0 right-0 bg-black/50 p-3">
+              <p class="text-white text-lg font-medium font-inter text-left bottom-4 absolute">
+                {label}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <p
+      class="mt-12 text-secondary-1 font-light text-base lg:text-lg xl:text-xl"
+    >
+      Todos respaldados por un equipo técnico con experiencia y compromiso
+    </p>
+  </div>
+</section>

@@ -1,0 +1,50 @@
+---
+import iconSalud from "@assets/svg/nosotros/salud.svg";
+import iconLegal from "@assets/svg/nosotros/legal.svg";
+import iconFinanzas from "@assets/svg/nosotros/financiero.svg";
+import iconFabricacion from "@assets/svg/nosotros/fabricacion.svg";
+import iconGobierno from "@assets/svg/nosotros/gobierno.svg";
+import { Image } from "astro:assets";
+---
+
+<section
+  class="w-full bg-[linear-gradient(135deg,_#DBE6F7_0%,_#F4F6F9_100%)] px-4 lg:px-0 py-24 lg:py-32 text-center"
+>
+  <div class="container mx-auto">
+    <h1
+      class="text-secondary-1 font-inter font-semibold text-xl md:text-2xl lg:text-3xl mb-4"
+    >
+      Soluciones tecnológicas de alto rendimiento
+    </h1>
+    <p
+      class="text-secondary-1 font-inter font-light text-sm md:text-base lg:text-lg xl:text-2xl max-w-3xl mx-auto"
+    >
+      Nuestro objetivo es brindar herramientas confiables para el manejo,
+      procesamiento y almacenamiento de información, organizaciones de distintos
+      sectores.
+    </p>
+
+    <div class="flex flex-wrap justify-center items-center gap-6 lg:gap-32 mt-12">
+      <div class="flex flex-col items-center gap-2">
+        <Image src={iconSalud} alt="Salud" class="size-21" />
+        <p class="text-primary-1 font-inter text-base md:text-lg lg:text-xl min-w-24">Salud</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <Image src={iconLegal} alt="Legal" class="size-21" />
+        <p class="text-primary-1 font-inter text-base md:text-lg lg:text-xl min-w-24">Legal</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <Image src={iconFinanzas} alt="Financiero" class="size-21" />
+        <p class="text-primary-1 font-inter text-base md:text-lg lg:text-xl min-w-24">Financiero</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <Image src={iconFabricacion} alt="Fabricación" class="size-21" />
+        <p class="text-primary-1 font-inter text-base md:text-lg lg:text-xl min-w-24">Fabricación</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <Image src={iconGobierno} alt="Gobierno" class="size-21" />
+        <p class="text-primary-1 font-inter text-base md:text-lg lg:text-xl min-w-24">Gobierno</p>
+      </div>
+    </div>
+  </div>
+</section>
