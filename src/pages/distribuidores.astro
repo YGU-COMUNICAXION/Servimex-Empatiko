@@ -1,0 +1,66 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import distribuidor1 from "@assets/img/distribuidores/1.png";
+import distribuidor2 from "@assets/img/distribuidores/2.png";
+import distribuidor3 from "@assets/img/distribuidores/3.png";
+import distribuidor4 from "@assets/img/distribuidores/4.png";
+import distribuidor5 from "@assets/img/distribuidores/5.png";
+import distribuidor6 from "@assets/img/distribuidores/6.png";
+import distribuidor7 from "@assets/img/distribuidores/7.png";
+import distribuidor8 from "@assets/img/distribuidores/8.png";
+import distribuidor9 from "@assets/img/distribuidores/9.png";
+import distribuidor10 from "@assets/img/distribuidores/10.png";
+
+const distribuidores = [
+  { img: distribuidor1, href: "https://remern.com.mx/" },
+  { img: distribuidor2 },
+  { img: distribuidor3, href: "https://tesigroup.com/" },
+  { img: distribuidor4, href: "https://imadine.com.mx/" },
+  { img: distribuidor5 },
+  { img: distribuidor6, href: "https://taqsistemasmedicos.com/" },
+  { img: distribuidor7, href: "https://technodomus.mx/" },
+  { img: distribuidor8, href: "https://cmr.mx/" },
+  { img: distribuidor9, href: "https://solutionsynet.com/" },
+  { img: distribuidor10 },
+];
+---
+
+<Layout title="Distribuidores" description="Distribuidores">
+  <section class="container mx-auto py-16px-4">
+    <div
+      class="max-w-5xl mx-auto bg-[#ffffff] rounded-[20px] py-32 px-4 shadow-md"
+    >
+      <h2
+        class="text-center text-secondary-1 font-semibold text-2xl md:text-[28px] mb-12 lg:mb-32"
+      >
+        Confían en nosotros
+      </h2>
+
+      <div
+        class="flex flex-wrap justify-center gap-12 lg:gap-16 xl:gap-28"
+      >
+        {
+          distribuidores.map((d, i) => (
+            <a href={d.href || "#"} class="block">
+              <img
+                src={d.img.src}
+                alt={`Distribuidor ${i + 1}`}
+                class="h-12 object-contain transition-opacity hover:opacity-80"
+              />
+            </a>
+          ))
+        }
+      </div>
+
+      <div class="text-center mt-12">
+        <button
+          class="bg-primary-1 hover:bg-[#3b4758] text-white px-8 py-3 rounded-full
+          text-base lg:text-xl font-normal font-inter transition"
+        >
+          INTÉGRATE COMO DISTRIBUIDOR
+        </button>
+      </div>
+    </div>
+  </section>
+</Layout>
