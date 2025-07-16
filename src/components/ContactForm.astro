@@ -1,0 +1,162 @@
+---
+const { variant = "section" } = Astro.props;
+
+const wrapperClass =
+  variant === "modal" ? "rounded-lg px-4 py-6 md:px-6 md:py-8" : "bg-white";
+
+const inputClass =
+  "w-full border border-primary-1 rounded-md px-4 py-2 text-base focus:outline-none focus:ring-2 focus:ring-primary-1 placeholder:text-neutral-2";
+---
+
+<form
+  id="contactForm"
+  class={`${wrapperClass} space-y-8 text-secondary-1 text-sm font-inter`}
+  action="https://formspree.io/f/mgvzelyr"
+  method="POST"
+>
+  {
+    variant === "modal" && (
+      <div class="border-b border-primary-1 pb-4">
+        <h3 class="font-bold text-base md:text-lg  border-b border-primary-1 pb-2 mb-6">
+          Solicite su presupuesto
+        </h3>
+        <label
+          for="message"
+          class="text-secondary-1 font-medium mb-2 inline-block"
+        >
+          Compártenos tus dudas
+        </label>
+        <textarea
+          name="message"
+          id="message"
+          rows="3"
+          class={`${inputClass} resize-none`}
+          placeholder="Me interesa recibir una cotización para el modelo. Quedo atento(a) a su respuesta. Saludos cordiales"
+        />
+      </div>
+    )
+  }
+
+  <div class="space-y-6">
+    <h3 class="font-bold font-inter text-base md:text-lg lg:text-xl">
+      {
+        variant === "modal"
+          ? "Detalles de contacto"
+          : "¡Escríbenos! Estamos listos para ayudarte"
+      }
+      <span class="text-neutral-2 text-xs font-normal ml-1">*Obligatorio.</span>
+    </h3>
+
+    <div class="grid gap-6">
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Nombre*"
+        class={inputClass}
+        required
+      />
+      <div class="grid md:grid-cols-2 gap-4">
+        <input
+          type="text"
+          name="empresa"
+          id="empresa"
+          placeholder="Empresa"
+          class={inputClass}
+        />
+        <input
+          type="tel"
+          name="telefono"
+          id="telefono"
+          placeholder="+52 00 000 0000*"
+          class={inputClass}
+          required
+        />
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
+        <select name="estado" id="estado" class={inputClass}>
+          <option value="Sin especificar">Selecciona un estado</option>
+          <option value="Aguascalientes">Aguascalientes</option>
+          <option value="Baja California">Baja California</option>
+          <option value="Baja California Sur">Baja California Sur</option>
+          <option value="Campeche">Campeche</option>
+          <option value="Chiapas">Chiapas</option>
+          <option value="Chihuahua">Chihuahua</option>
+          <option value="Ciudad de México">Ciudad de México</option>
+          <option value="Coahuila">Coahuila</option>
+          <option value="Colima">Colima</option>
+          <option value="Durango">Durango</option>
+          <option value="Estado de México">Estado de México</option>
+          <option value="Guanajuato">Guanajuato</option>
+          <option value="Guerrero">Guerrero</option>
+          <option value="Hidalgo">Hidalgo</option>
+          <option value="Jalisco">Jalisco</option>
+          <option value="Michoacán">Michoacán</option>
+          <option value="Morelos">Morelos</option>
+          <option value="Nayarit">Nayarit</option>
+          <option value="Nuevo León">Nuevo León</option>
+          <option value="Oaxaca">Oaxaca</option>
+          <option value="Puebla">Puebla</option>
+          <option value="Querétaro">Querétaro</option>
+          <option value="Quintana Roo">Quintana Roo</option>
+          <option value="San Luis Potosí">San Luis Potosí</option>
+          <option value="Sinaloa">Sinaloa</option>
+          <option value="Sonora">Sonora</option>
+          <option value="Tabasco">Tabasco</option>
+          <option value="Tamaulipas">Tamaulipas</option>
+          <option value="Tlaxcala">Tlaxcala</option>
+          <option value="Veracruz">Veracruz</option>
+          <option value="Yucatán">Yucatán</option>
+          <option value="Zacatecas">Zacatecas</option>
+        </select>
+
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="Correo electrónico*"
+          class={inputClass}
+          required
+        />
+      </div>
+
+      {
+        variant === "section" && (
+          <div>
+            <h3 class="font-medium text-base md:text-lg mb-2">
+              Compártenos tus dudas
+            </h3>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              rows="3"
+              placeholder="Me interesa recibir una cotización para un equipo. Quedo atento(a) a su respuesta. Saludos cordiales."
+              class={`${inputClass} resize-none`}
+            />
+          </div>
+        )
+      }
+    </div>
+  </div>
+
+  <div class="flex justify-end gap-4 pt-2">
+    {
+      variant === "modal" && (
+        <button
+          type="button"
+          class="text-secondary-1 font-normal text-lg lg:text-xl border-none hover:border-primary-1 px-4 py-2 rounded-full hover:cursor-pointer"
+          onclick="this.closest('form').reset()"
+        >
+          CANCELAR
+        </button>
+      )
+    }
+
+    <button
+      type="submit"
+      class="bg-primary-1 text-primary-3 px-6 py-2 rounded-full font-normal text-lg lg:text-xl hover:cursor-pointer hover:bg-primary-2"
+    >
+      ENVIAR
+    </button>
+  </div>
+</form>
