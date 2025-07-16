@@ -68,15 +68,18 @@ export default function DownloadsTabs() {
             <div className="relative mb-4" key={tab}>
               <button
                 onClick={() => setActiveTab(tab)}
-                className={`w-full px-4 py-3 text-left font-semibold rounded-l-full flex items-center justify-between transition-all duration-300 relative z-10 ${
-                  activeTab === tab
-                    ? "bg-[#45A39D] text-white shadow-lg"
-                    : "text-white/70 hover:text-white"
-                }`}
+                className={`w-full px-4 py-3
+                  text-left font-semibold
+                  rounded-full md:rounded-r-none
+                  flex items-center justify-between transition-all duration-300 relative z-10 ${
+                    activeTab === tab
+                      ? "bg-[#45A39D] text-white shadow-lg"
+                      : "text-white/70 hover:text-white"
+                  }`}
               >
                 <span>{tab}</span>
                 {activeTab === tab && (
-                  <span className="absolute right-[-20px] bg-[#1E2A38] rounded-full size-12 flex items-center justify-center">
+                  <span className="absolute right-0 md:right-[-20px] rotate-90 md:rotate-0 bg-[#1E2A38] rounded-full size-12 flex items-center justify-center">
                     <ChevronRightIcon className="ml-1 size-6 text-[#45A39D]" />
                   </span>
                 )}
