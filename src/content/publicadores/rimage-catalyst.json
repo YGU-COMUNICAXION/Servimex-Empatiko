@@ -1,0 +1,33 @@
+{
+  "id": "rimage-catalyst",
+  "slug": "rimage-catalyst",
+  "name": "Rimage Catalyst",
+  "type": "Publicadores",
+  "category": "Sistemas de publicación de discos",
+  "description": "Producción de discos personalizados a todo color con datos médicos.",
+  "largeDescription": "El sistema Catalyst permite producir discos personalizados a todo color con datos médicos, incluyendo nombre del paciente, examen y más. Su software automatiza el proceso para mayor rapidez y precisión.",
+  "image": "/images/productos/publicadores/rimage-catalyst.png",
+  "features": [
+    "Calidad de impresión inigualable",
+    "Capacidad robusta en un diseño compacto",
+    "Procesador y almacenamiento integrados",
+    "Monitoreo y control a distancia"
+  ],
+  "fullFeatures": [
+    "Grabadores de discos: CD/DVD o BD",
+    "Cantidad de grabadores: 2 (intercambiables)",
+    "Velocidad de grabación: CD 48x, DVD-R 24x",
+    "Capacidad del carrusel: 3 x 50 = 150 discos",
+    "Bandeja de salida (exterior): 50 discos",
+    "Software: Producer III Software Suite",
+    "Procesador: Intel Core i5",
+    "Sistema operativo: Windows 11",
+    "Disco duro SSD de 1 TB",
+    "Red: 1 Gb Ethernet",
+    "Puertos USB: frontales y traseros",
+    "RAM: 8 GB",
+    "Centro de control integrado: Sí"
+  ],
+  "url": "https://empatiko.mx/productos/publicadores/rimage-catalyst",
+  "order": 4
+}

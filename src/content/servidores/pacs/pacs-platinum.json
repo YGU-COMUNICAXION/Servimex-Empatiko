@@ -1,0 +1,31 @@
+{
+  "id": "pacs-platinum",
+  "slug": "pacs-platinum",
+  "name": "Pacs Platinum",
+  "type": "Servidores",
+  "category": "PACS",
+  "description": "Ideal para instituciones que gestionan grandes volúmenes de estudios médicos, ofrece alto rendimiento, almacenamiento escalable y conectividad avanzada.",
+  "largeDescription": "Sus bahías hot-swap y sistemas redundantes aseguran operación continua sin interrupciones.",
+  "image": "@assets/img/productos/servidores/ris.png",
+  "features": [
+    "Alto desempeño para diagnóstico crítico",
+    "Procesamiento multitarea avanzado",
+    "Almacenamiento clínico rápido",
+    "Intercambio en caliente",
+    "Disponibilidad asegurada",
+    "Seguridad de nivel empresarial",
+    "Infraestructura médica escalable",
+    "Implementación directa"
+  ],
+  "fullFeatures": [
+    "Servidor en rack 2U con dos procesadores Intel Xeon Escalables de 5ª generación",
+    "Memoria DDR5 ECC REG hasta 1 TB",
+    "8 bahías hot-swap para discos SAS/SATA de 3.5”/2.5”",
+    "6 ranuras de expansión PCIe Gen 5: 4 ×16 y 2 ×8",
+    "2 puertos LAN Intel RJ45 de 1 Gb/s integrados",
+    "Puerto dedicado para administración remota",
+    "Fuente de poder redundante"
+  ],
+  "url": "https://empatico.mx/productos/pacs-platinum",
+  "order": 3
+}

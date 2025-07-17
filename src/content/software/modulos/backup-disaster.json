@@ -1,0 +1,26 @@
+{
+  "id": "backup-disaster",
+  "slug": "backup-disaster",
+  "name": "Backup & Disaster",
+  "type": "Software médico",
+  "category": "Módulos",
+  "description": "Sistema de respaldo automático y recuperación ante desastres, especializado en estudios DICOM.",
+  "largeDescription": "Diseñado para garantizar la continuidad operativa en entornos médicos, ya sea en instalaciones locales o en la nube.",
+  "image": "@assets/img/productos/software/backup-disaster.png",
+  "features": [
+    "Formato 100% DICOM con índices",
+    "Sustituye al PACS en caso de desastre",
+    "Operación automatizada",
+    "Herramienta de migración del PACS",
+    "Espejo (mirroring) de las unidades de almacenamiento del PACS"
+  ],
+  "fullFeatures": [
+    "Programación automática de respaldos y recuperación",
+    "Restauración automática en caso de desastre",
+    "Compatible con cualquier sistema RIS/PACS",
+    "Escalabilidad para múltiples sedes",
+    "Seguridad avanzada con cifrado y autenticación"
+  ],
+  "url": "https://empatiko.mx/productos/software/backup-disaster",
+  "order": 1
+}

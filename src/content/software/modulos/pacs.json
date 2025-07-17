@@ -1,0 +1,21 @@
+{
+  "id": "pacs",
+  "name": "PACS",
+  "description": "Sistema para almacenar, gestionar y visualizar imágenes médicas de forma centralizada y segura.",
+  "largeDescription": "Sistema para almacenar, gestionar y visualizar imágenes médicas de forma centralizada y segura.",
+  "image": "@assets/img/productos/software/pacs.png",
+  "category": "Software Médico",
+  "features": [
+    "Configurable para trabajar on premise, cloud e híbrido",
+    "Herramientas avanzadas de diagnóstico",
+    "Integración con sistemas de historia clínica y gestión de recursos"
+  ],
+  "fullFeatures": [
+    "Almacenamiento y acceso rápido a estudios radiológicos",
+    "Visualización de imágenes DICOM con herramientas de diagnóstico",
+    "Compatibilidad con múltiples modalidades y sistemas",
+    "Acceso remoto desde diversos dispositivos"
+  ],
+  "url": "https://drive.google.com/file/d/EXAMPLE_PACS",
+  "order": 2
+}

@@ -1,0 +1,22 @@
+{
+  "id": "portal-paciente",
+  "name": "Portal para Paciente",
+  "description": "Plataforma web que permite a pacientes y médicos acceder de manera segura a estudios e informes médicos.",
+  "largeDescription": "Plataforma web que permite a pacientes y médicos acceder de manera segura a estudios e informes médicos.",
+  "image": "@assets/img/productos/software/portal.png",
+  "category": "Software Médico",
+  "features": [
+    "Envío mediante WhatsApp, e-mail y otras opciones",
+    "Optimización de recursos",
+    "Compatible (VNA)",
+    "Personalizable"
+  ],
+  "fullFeatures": [
+    "Acceso a estudios mediante correo electrónico, SMS, WhatsApp o código QR.",
+    "Visualización y descarga de imágenes en formatos DICOM y JPEG.",
+    "Interfaz personalizable con la identidad de la institución médica.",
+    "Entrega unificada de resultados de radiología y laboratorio."
+  ],
+  "url": "https://drive.google.com/file/d/EXAMPLE_PORTAL",
+  "order": 3
+}

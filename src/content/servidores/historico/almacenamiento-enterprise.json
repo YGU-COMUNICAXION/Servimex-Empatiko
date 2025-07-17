@@ -1,0 +1,31 @@
+{
+  "id": "almacenamiento-enterprise",
+  "slug": "almacenamiento-enterprise",
+  "name": "Servidor Almacenamiento Enterprise",
+  "type": "Servidores",
+  "category": "Histórico",
+  "description": "Almacenamiento confiable y de alta capacidad para estudios médicos históricos y respaldos.",
+  "largeDescription": "Proporciona almacenamiento confiable y de alta capacidad para estudios médicos históricos y respaldos. Ideal para mantener archivos clínicos seguros, con posibilidad de expansión y componentes de nivel empresarial.",
+  "image": "@assets/img/productos/servidores/almacenamiento.png",
+  "features": [
+    "Rendimiento para centros de datos médicos",
+    "Memoria estable",
+    "Capacidad masiva de almacenamiento",
+    "Mantenimiento sin apagar",
+    "Alta disponibilidad y tolerancia a fallos",
+    "Protección de datos médicos",
+    "Escalabilidad arquitectónica",
+    "Listo para usar en entornos clínicos"
+  ],
+  "fullFeatures": [
+    "Chasis de 2U con 12 bahías hot-swap frontales de 3.5”",
+    "Bandeja trasera adicional para 2 unidades de 2.5”",
+    "Plataforma Intel Xeon Escalable de 5ª generación",
+    "Capacidad de combinación SSD + HDD de alto rendimiento",
+    "RAID empresarial con respaldo de caché",
+    "Red de alta velocidad 10/25GbE",
+    "No incluye sistema operativo (cliente proporciona e instala)"
+  ],
+  "url": "https://empatiko.mx/productos/servidor-almacenamiento-enterprise",
+  "order": 1
+}

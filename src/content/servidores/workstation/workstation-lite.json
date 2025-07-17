@@ -1,0 +1,31 @@
+{
+  "id": "workstation-lite",
+  "slug": "workstation-lite",
+  "name": "Workstation Lite",
+  "type": "Servidores",
+  "category": "Workstation",
+  "description": "Estación de trabajo compacta y potente, ideal para entornos clínicos o administrativos.",
+  "largeDescription": "Equipada con procesador Intel i5, almacenamiento rápido y conectividad moderna, perfecta para consulta de informes, acceso a sistemas médicos y gestión de usuarios.",
+  "image": "@assets/img/productos/servidores/workstation.png",
+  "features": [
+    "Rendimiento eficiente con Intel i5 de 12ª gen",
+    "16GB RAM ideal para tareas básicas de visualización",
+    "Gráficos NVIDIA A400 para pantallas secundarias",
+    "Almacenamiento NVMe PCIe 4.0 rápido (512GB)",
+    "Formato compacto con ventilación activa",
+    "Conectividad 10GbE para PACS pequeños",
+    "Licenciamiento OEM Windows 11 Pro",
+    "Garantía 3 años con EQCare Nobilis"
+  ],
+  "fullFeatures": [
+    "Procesador Intel Core i5 de 12ª generación",
+    "Memoria DDR4 de alto rendimiento",
+    "Unidad de estado sólido NVMe",
+    "Placa madre microATX con WiFi",
+    "Tarjeta gráfica dedicada NVIDIA",
+    "Periféricos Logitech incluidos",
+    "Garantía de 3 años"
+  ],
+  "url": "https://empatiko.mx/productos/servidores/workstation-lite",
+  "order": 1
+}

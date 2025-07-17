@@ -1,0 +1,26 @@
+{
+  "id": "publicador-usb",
+  "slug": "publicador-usb",
+  "name": "Publicador de Memorias USB",
+  "type": "Publicadores",
+  "category": "Publicadores de USB",
+  "description": "Sistema compacto para grabación segura de estudios médicos en USB.",
+  "largeDescription": "Sistema RX400 para grabar estudios médicos en memorias USB de forma rápida y sencilla. Ofrece alto rendimiento, más espacio que un CD y mayor compatibilidad. Compacto y fácil de integrar en hospitales y centros de salud.",
+  "image": "/images/productos/publicadores/publicador-usb.png",
+  "features": [
+    "Tecnología de última generación con almacenamiento integrado",
+    "Protege las memorias USB contra escritura accidental y virus",
+    "Imprime etiqueta autoadherible para la USB",
+    "Pantalla táctil intuitiva"
+  ],
+  "fullFeatures": [
+    "4 puertos USB actualizables a USB-C",
+    "Pantalla táctil de 10.1'' con resolución de 1280 × 1600 px",
+    "Expulsión automática de etiqueta tras desconexión",
+    "Unidad de CD/DVD opcional",
+    "Impresora térmica de etiquetas 54x25 mm",
+    "Disco duro SSD extraíble de almacenamiento temporal"
+  ],
+  "url": "https://empatiko.mx/productos/publicadores/publicador-de-memorias-usb",
+  "order": 3
+}

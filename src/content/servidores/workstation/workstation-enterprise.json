@@ -1,0 +1,32 @@
+{
+  "id": "workstation-enterprise",
+  "slug": "workstation-enterprise",
+  "name": "Workstation Enterprise",
+  "type": "Servidores",
+  "category": "Workstation",
+  "description": "Estación compacta de alto rendimiento con memoria ampliada, GPU profesional y conectividad avanzada.",
+  "largeDescription": "Ideal para diagnóstico, interpretación de estudios y multitarea en entornos médicos exigentes.",
+  "image": "@assets/img/productos/servidores/workstation.png",
+  "features": [
+    "Procesador Intel i5-12400 con 6 núcleos y 12 hilos",
+    "NVIDIA A400 con 4 MiniDP para 4 monitores",
+    "Red 10GbE doble para alta disponibilidad",
+    "512GB NVMe + 16GB RAM para carga rápida de estudios",
+    "Ideal para hospitales con alto volumen",
+    "Estabilidad garantizada con 3 años EQCare",
+    "WiFi mATX ASUS para conexiones clínicas flexibles",
+    "Compatible con flujos PACS, RIS y DICOM Viewer"
+  ],
+  "fullFeatures": [
+    "Procesador Intel Core i5 de 12ª generación",
+    "32GB de memoria DDR4",
+    "SSD NVMe de alta velocidad",
+    "Placa madre con WiFi integrada",
+    "Gráficos dedicados NVIDIA A400",
+    "Red de 10Gbps",
+    "Teclado y mouse incluidos",
+    "Garantía de 3 años"
+  ],
+  "url": "https://empatiko.mx/productos/servidores/workstation-enterprise",
+  "order": 2
+}

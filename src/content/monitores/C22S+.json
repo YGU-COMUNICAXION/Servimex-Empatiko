@@ -1,0 +1,30 @@
+{
+  "id": "C22S+",
+  "slug": "c22s-plus",
+  "name": "C22S+",
+  "type": "Monitores de Grado Médico",
+  "category": "Monitores de 2MP",
+  "description": "Monitor clínico de 2 megapíxeles con retroiluminación estabilizada y tecnología de bajo consumo.",
+  "largeDescription": "Monitor de 2 megapíxeles con tecnología de estabilización de retroiluminación, calidad constante y adaptación automática a la luz ambiental. Ideal para diagnóstico clínico y visualización de imágenes médicas en sistemas PACS.",
+  "image": "@assets/img/productos/monitores/C22S+.png",
+  "features": [
+    "Alta precisión DICOM",
+    "Calibración de uniformidad",
+    "Tecnología IPS",
+    "Luz azul reducida",
+    "Consumo energético mínimo"
+  ],
+  "fullFeatures": [
+    "Tamaño de la pantalla: 21.3”",
+    "Resolución: 1600 × 1200",
+    "Sistema de estabilización de retroiluminación",
+    "Sistema adaptativo de luz ambiental",
+    "Cumple con la norma internacional DICOM",
+    "Sistema continuo de aseguramiento de calidad",
+    "Tecnología IPS con ángulo de visión amplio",
+    "Brillo máximo: 1000 cd/m²",
+    "Contraste típico: 1800:1"
+  ],
+  "url": "https://empatiko.mx/productos/monitores/c22s-plus",
+  "order": 1
+}

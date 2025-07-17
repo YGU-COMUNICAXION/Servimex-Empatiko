@@ -1,0 +1,23 @@
+{
+  "id": "ris",
+  "name": "RIS",
+  "description": "Sistema que gestiona de manera integral el flujo de trabajo en radiología, desde la programación de citas hasta la entrega de informes médicos.",
+  "largeDescription": "Sistema que gestiona de manera integral el flujo de trabajo en radiología, desde la programación de citas hasta la entrega de informes médicos.",
+  "image": "@assets/img/productos/software/ris.png",
+  "category": "Software Médico",
+  "features": [
+    "Gestión integral",
+    "Comunicación eficiente",
+    "Reducción de errores de identificación",
+    "Optimización de la programación",
+    "Automatización de procesos"
+  ],
+  "fullFeatures": [
+    "Programación flexible de citas y procedimientos",
+    "Integración con modalidades y sistemas PACS",
+    "Gestión de datos demográficos y clínicos del paciente",
+    "Interfaz multilingüe y adaptable a diferentes flujos de trabajo"
+  ],
+  "url": "https://drive.google.com/file/d/EXAMPLE_RIS",
+  "order": 1
+}

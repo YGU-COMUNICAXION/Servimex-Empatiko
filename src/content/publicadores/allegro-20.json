@@ -1,0 +1,25 @@
+{
+  "id": "allegro-20",
+  "slug": "allegro-20",
+  "name": "Allegro 20",
+  "type": "Publicadores",
+  "category": "Sistemas de publicación de discos",
+  "description": "Solución compacta y eficiente para distribución de CD y DVD con imágenes médicas.",
+  "largeDescription": "Solución para distribución de CD y DVD con imágenes médicas, ideal para entornos RIS/PACS. Los sistemas Allegro ofrecen flujos de trabajo DICOM eficientes, de alta calidad y bajo costo, integrándose fácilmente mediante el software Rimage.",
+  "image": "/images/productos/publicadores/allegro-20.png",
+  "features": [
+    "Compacto y eficiente",
+    "Intuitivo y fácil de operar",
+    "Bajo costo de mantenimiento",
+    "Impresión inkjet de alta calidad"
+  ],
+  "fullFeatures": [
+    "Publicador de CD, DVD y con opción de BluRay",
+    "Capacidad de 20 discos",
+    "Impresora inkjet de alta tecnología",
+    "Utiliza solo un cartucho de tinta",
+    "Un grabador de CD/DVD o BluRay"
+  ],
+  "url": "https://empatiko.mx/productos/publicadores/allegro-20",
+  "order": 1
+}

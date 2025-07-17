@@ -1,0 +1,32 @@
+{
+  "id": "rimage-producer",
+  "slug": "rimage-producer",
+  "name": "Rimage Producer",
+  "type": "Publicadores",
+  "category": "Sistemas de publicación de discos",
+  "description": "Impresión térmica de discos con operación industrial continua y eficiente.",
+  "largeDescription": "Ofrece impresión térmica de discos a color o monocromática con calidad profesional y producción industrial 24/7. Su robótica confiable y sistema de flujo de aire filtrado aseguran un funcionamiento continuo y eficiente.",
+  "image": "/images/productos/publicadores/rimage-producer.png",
+  "features": [
+    "Diseño robusto para publicación industrial de discos",
+    "Calidad de impresión inigualable",
+    "Procesador y almacenamiento integrados",
+    "Desempeño excepcional para entornos exigentes"
+  ],
+  "fullFeatures": [
+    "Cuatro grabadoras de intercambio rápido",
+    "Flujo de aire positivo filtrado",
+    "Discos removibles frontales",
+    "SSD con 16 GB de RAM",
+    "Carrusel giratorio para 400 discos",
+    "Bandeja de salida externa: 100 discos",
+    "DiscWatch™ con luz de estado",
+    "Pantalla LCD de cuatro líneas",
+    "Puerto USB 3.0 frontal, USB 2.0 y 3.0 posteriores",
+    "Computadora integrada con red (8300N)",
+    "Rimage Software Suite (RSS)",
+    "Impresión Everest Encore o Prism III"
+  ],
+  "url": "https://empatiko.mx/productos/publicadores/rimage-producer",
+  "order": 5
+}

@@ -1,0 +1,27 @@
+{
+  "id": "C510S",
+  "slug": "c510s",
+  "name": "C510S",
+  "type": "Monitores de Grado Médico",
+  "category": "Monitores de 5MP",
+  "description": "Monitor de 5 megapíxeles con alta resolución, ideal para mamografía digital.",
+  "largeDescription": "Monitor de 5 megapíxeles con alta resolución, brillo y contraste ultraaltos, bajo consumo y amplia compatibilidad con sistemas PACS e imágenes médicas como mamografía digital. Su tecnología de luz azul reducida protege la visión al disminuir más del 50% de la luz dañina.",
+  "image": "@assets/img/productos/monitores/C510S.png",
+  "features": [
+    "Alta resolución (5MP)",
+    "Cumplimiento DICOM",
+    "Protección visual con baja luz azul",
+    "Adaptación a la luz ambiental",
+    "Calibración automática"
+  ],
+  "fullFeatures": [
+    "Tamaño de la pantalla : 21.3”",
+    "Resolución: 2560 × 2048",
+    "Tecnología de baja luz azul",
+    "Sistema adaptativo de luz ambiente",
+    "Sistema de estabilización de retroluces",
+    "Conforme a la norma DICOM"
+  ],
+  "url": "https://empatiko.mx/productos/monitores/c510s",
+  "order": 3
+}

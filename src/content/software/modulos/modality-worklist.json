@@ -1,0 +1,23 @@
+{
+  "id": "modality-worklist",
+  "slug": "modality-worklist",
+  "name": "Modality Worklist",
+  "type": "Software médico",
+  "category": "Módulos",
+  "description": "Servidor que proporciona a las modalidades la lista de trabajos programados.",
+  "largeDescription": "Optimiza la adquisición de estudios y mejora el flujo de trabajo en imagenología.",
+  "image": "@assets/img/productos/software/modality-worklist.png",
+  "features": [
+    "Reducción de errores de identificación",
+    "Sincronización automática de datos demográficos",
+    "Reducción de estudios duplicados o incorrectos"
+  ],
+  "fullFeatures": [
+    "Sincronización automática de datos entre RIS y modalidades",
+    "Reducción de errores manuales en la introducción de datos",
+    "Mejora en la eficiencia del flujo de trabajo radiológico",
+    "Compatibilidad con diversas modalidades y sistemas PACS"
+  ],
+  "url": "https://empatiko.mx/productos/software/modality-worklist",
+  "order": 2
+}

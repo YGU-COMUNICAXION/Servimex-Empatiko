@@ -1,0 +1,31 @@
+{
+  "id": "portal-plus",
+  "slug": "portal-plus",
+  "name": "Portal Plus",
+  "type": "Servidores",
+  "category": "PORTAL",
+  "description": "Alto rendimiento para entornos con muchas consultas y acceso rápido al portal del paciente.",
+  "largeDescription": "Ideal para entornos con muchas consultas, ofrece acceso rápido y fluido al portal del paciente. Asegura alto rendimiento en la entrega de imágenes, con administración remota y protección de datos.",
+  "image": "@assets/img/productos/servidores/ris.png",
+  "features": [
+    "Rendimiento clínico escalable",
+    "Memoria confiable y rápida",
+    "Almacenamiento de alto desempeño",
+    "Intercambio sin interrupciones",
+    "Infraestructura resiliente",
+    "Seguridad integral",
+    "Arquitectura lista para escalar",
+    "Implementación inmediata"
+  ],
+  "fullFeatures": [
+    "Arquitectura basada en procesador Intel Xeon Escalable de 5ª generación",
+    "Memoria DDR5 ECC REG para rendimiento continuo",
+    "Controlador RAID con respaldo de caché",
+    "SSD de alta capacidad y velocidad",
+    "Conectividad Broadcom 10/25GbE para acceso remoto optimizado",
+    "Administración remota a través de BMC/IPMI",
+    "Sistema operativo Microsoft preinstalado con activación"
+  ],
+  "url": "https://empatiko.mx/productos/portal-plus",
+  "order": 2
+}

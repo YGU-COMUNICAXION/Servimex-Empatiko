@@ -1,0 +1,31 @@
+{
+  "id": "workstation-plus",
+  "slug": "workstation-plus",
+  "name": "Workstation Plus",
+  "type": "Servidores",
+  "category": "Workstation",
+  "description": "Estación compacta con procesador Intel i7 de 14ª generación, ideal para gestión hospitalaria y acceso a RIS/PACS.",
+  "largeDescription": "Ofrece conectividad avanzada, soporte TPM y sistema operativo profesional.",
+  "image": "@assets/img/productos/servidores/workstation.png",
+  "features": [
+    "Intel i7-14700 (20 núcleos / 28 hilos)",
+    "32GB RAM para tareas sin degradación",
+    "SSD NVMe 1TB PCIe 4.0 ideal para cacheo y prefetch",
+    "Módulo TPM 2.0 para seguridad avanzada",
+    "WiFi 6, LAN y BT para flexibilidad hospitalaria",
+    "Expansión USB dedicada",
+    "Gabinete 550W Gold",
+    "Garantía 5 años"
+  ],
+  "fullFeatures": [
+    "Procesador Intel Core i7 de 14ª generación",
+    "32 GB de memoria DDR4",
+    "SSD NVMe PCIe 4.0 de 1 TB",
+    "WiFi 6 y Bluetooth",
+    "Seguridad TPM con conector SPI",
+    "Sistema operativo Windows 11 Pro",
+    "Garantía extendida de 5 años"
+  ],
+  "url": "https://empatiko.mx/productos/servidores/workstation-plus",
+  "order": 3
+}

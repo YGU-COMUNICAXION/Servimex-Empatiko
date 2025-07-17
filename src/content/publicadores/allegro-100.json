@@ -1,0 +1,26 @@
+{
+  "id": "allegro-100",
+  "slug": "allegro-100",
+  "name": "Allegro 100",
+  "type": "Publicadores",
+  "category": "Sistemas de publicación de discos",
+  "description": "Publicador de alto volumen de discos médicos, con integración RIS/PACS.",
+  "largeDescription": "Permite entregar CD y DVD con estudios médicos a los pacientes de forma sencilla y económica. Los sistemas Allegro se integran fácilmente con RIS/PACS y optimizan el flujo de trabajo DICOM mediante el software Rimage.",
+  "image": "/images/productos/publicadores/allegro-100.png",
+  "features": [
+    "Producción autónoma de altos volúmenes de discos",
+    "Intuitivo y fácil de operar",
+    "Bajo costo de mantenimiento",
+    "Impresión inkjet de alta calidad"
+  ],
+  "fullFeatures": [
+    "Publicador de CD/DVD y con opción de BluRay",
+    "Capacidad de 100 discos",
+    "Charola de salida de 100 discos (opcional)",
+    "Impresora inkjet de alta tecnología",
+    "Utiliza solo un cartucho de tinta",
+    "Dos grabadores de CD/DVD o BluRay"
+  ],
+  "url": "https://empatiko.mx/productos/publicadores/allegro-100",
+  "order": 2
+}

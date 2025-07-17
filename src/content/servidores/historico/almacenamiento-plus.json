@@ -1,0 +1,31 @@
+{
+  "id": "almacenamiento-plus",
+  "slug": "almacenamiento-plus",
+  "name": "Servidor Almacenamiento Plus",
+  "type": "Servidores",
+  "category": "Histórico",
+  "description": "Solución robusta para almacenar grandes volúmenes de datos clínicos a largo plazo.",
+  "largeDescription": "Ofrece redundancia, velocidad y disponibilidad continua, con opción de personalización total gracias a la ausencia de sistema operativo preinstalado.",
+  "image": "@assets/img/productos/servidores/almacenamiento.png",
+  "features": [
+    "Rendimiento para centros de datos médicos",
+    "Memoria confiable",
+    "Almacenamiento excepcional",
+    "Hot-Swap profesional",
+    "Redundancia garantizada",
+    "Seguridad hospitalaria",
+    "Infraestructura escalable",
+    "Implementación inmediata"
+  ],
+  "fullFeatures": [
+    "Chasis 2U con 12 bahías frontales hot-swap de 3.5”",
+    "Bandeja trasera adicional de 2 bahías para discos de 2.5”",
+    "Compatible con múltiples discos duros de alta capacidad y SSD",
+    "Administración remota y módulo de seguridad TPM",
+    "Alto rendimiento con procesador Intel Xeon y memoria DDR5",
+    "Red de alta velocidad con interfaz Broadcom 10/25GbE",
+    "Personalización total del sistema operativo"
+  ],
+  "url": "https://empatiko.mx/productos/servidor-almacenamiento-plus",
+  "order": 2
+}

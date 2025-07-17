@@ -1,0 +1,33 @@
+{
+  "id": "servidor-dual-premium",
+  "slug": "servidor-dual-premium",
+  "name": "Servidor Dual Premium",
+  "type": "Servidores",
+  "category": "RIS/PACS",
+  "description": "Optimizado para entornos con alto volumen de imágenes médicas, combina alto rendimiento, eficiencia y disponibilidad continua.",
+  "largeDescription": "Permite ejecutar múltiples tareas virtuales con rapidez y seguridad, y su almacenamiento expandible sin interrupciones garantiza operación constante en servicios críticos.",
+  "image": "@assets/img/productos/servidores/ris.png",
+
+  "features": [
+    "Rendimiento clínico sólido",
+    "Memoria expandida",
+    "Almacenamiento de alto desempeño",
+    "Escalabilidad mejorada",
+    "Redundancia médica",
+    "Seguridad empresarial",
+    "Listo para integración RIS/PACS",
+    "Instalación personalizada"
+  ],
+  "fullFeatures": [
+    "Servidor rack 2U con procesador único Intel Xeon Escalable de 5ª generación",
+    "Memoria DDR5 ECC REG hasta 1 TB",
+    "12 bahías hot-swap para discos SAS/SATA de 3.5”/2.5”",
+    "5 ranuras PCIe Gen 5 de expansión: 2 ×16 y 3 ×8",
+    "2 puertos LAN Intel RJ45 de 1 Gb/s integrados",
+    "Puerto dedicado para administración remota",
+    "Fuente de poder redundante",
+    "Chasis: SM 825TQC-R802LPB, rack 2U, 8 bahías hot-swap, PSU redundante de 800W"
+  ],
+  "url": "https://empatico.mx/productos/servidor-dual-premium",
+  "order": 4
+}

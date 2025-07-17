@@ -1,0 +1,26 @@
+{
+  "id": "suministros",
+  "slug": "suministros",
+  "name": "Suministros",
+  "type": "Publicadores",
+  "category": "Accesorios y consumibles",
+  "description": "Consumibles para impresoras y publicadores Rimage.",
+  "largeDescription": "Obtenga un funcionamiento fiable e ininterrumpido de su sistema Producer. Con cintas y discos optimizados, los kits de medios le dan los resultados más bonitos y duraderos en un paquete práctico.",
+  "image": "/images/productos/publicadores/suministros.png",
+  "features": [
+    "Calidad insuperable",
+    "Resultados confiables",
+    "Mayor rendimiento",
+    "Costos fijos"
+  ],
+  "fullFeatures": [
+    "Cartuchos todo en uno con resultados profesionales y a todo color",
+    "Diseñados para un rendimiento óptimo en impresoras inkjet",
+    "Compatibles con la serie Allegro de Rimage",
+    "Media original de Rimage para mayor durabilidad y calidad de impresión",
+    "Ideales para impresiones precisas en discos Blu-ray™, CD y DVD",
+    "Suministros desarrollados específicamente para maximizar el desempeño de las impresoras Rimage"
+  ],
+  "url": "https://empatiko.mx/productos/publicadores/suministros",
+  "order": 6
+}

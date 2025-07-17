@@ -1,0 +1,31 @@
+{
+  "id": "portal-enterprise",
+  "slug": "portal-enterprise",
+  "name": "Portal Enterprise",
+  "type": "Servidores",
+  "category": "PORTAL",
+  "description": "Procesamiento clínico web de alto nivel, rápido y confiable para acceso a estudios e informes médicos.",
+  "largeDescription": "Permite a los pacientes acceder de forma segura a sus estudios e informes desde cualquier dispositivo con Internet. Brinda alta disponibilidad, rapidez y seguridad para una experiencia confiable y protegida.",
+  "image": "@assets/img/productos/servidores/ris.png",
+  "features": [
+    "Procesamiento web clínico de alto nivel",
+    "Memoria eficiente para carga constante",
+    "Almacenamiento rápido y confiable",
+    "Flexibilidad de servicio",
+    "Alta disponibilidad asegurada",
+    "Seguridad de acceso médico",
+    "Arquitectura escalable",
+    "Listo para implementación"
+  ],
+  "fullFeatures": [
+    "Arquitectura basada en procesador Intel Xeon Escalable de 5ª generación",
+    "Memoria DDR5 ECC REG de alto rendimiento",
+    "Controlador RAID con respaldo de batería y módulo de caché",
+    "Conectividad 10/25 GbE para acceso remoto rápido",
+    "Almacenamiento con unidades de estado sólido (SSD) confiables",
+    "Administración remota avanzada vía BMC/IPMI",
+    "Compatibilidad con entornos virtualizados y sistemas Microsoft"
+  ],
+  "url": "https://empatiko.mx/productos/portal-enterprise",
+  "order": 1
+}

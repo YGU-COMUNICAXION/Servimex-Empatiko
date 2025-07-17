@@ -1,0 +1,31 @@
+{
+  "id": "almacenamiento-platinum",
+  "slug": "almacenamiento-platinum",
+  "name": "Servidor Almacenamiento Platinum",
+  "type": "Servidores",
+  "category": "Histórico",
+  "description": "Alta capacidad y rendimiento para archivar grandes volúmenes de datos médicos.",
+  "largeDescription": "Diseñado para archivar grandes volúmenes de datos médicos históricos, ofrece alto rendimiento, gran capacidad y confiabilidad. Incorpora procesamiento potente, conectividad veloz y almacenamiento híbrido SSD/disco duro para entornos clínicos exigentes.",
+  "image": "@assets/img/productos/servidores/almacenamiento.png",
+  "features": [
+    "Rendimiento de alta densidad médica",
+    "Potencia de memoria intensiva",
+    "Almacenamiento masivo de archivos DICOM",
+    "Intercambio sin interrupciones",
+    "Alta disponibilidad garantizada",
+    "Seguridad en la conservación de datos",
+    "Plataforma escalable",
+    "Sistema listo para operar"
+  ],
+  "fullFeatures": [
+    "Chasis 2U con almacenamiento escalable",
+    "Bandeja trasera de 2 bahías para discos de 2.5”",
+    "Plataforma Intel Xeon Gold de 24 núcleos",
+    "Memoria DDR5 ECC de alto rendimiento",
+    "SSD NVMe y SATA combinados con HDD de gran capacidad",
+    "Red Broadcom 100GbE RJ45",
+    "Garantía extendida de 5 años"
+  ],
+  "url": "https://empatiko.mx/productos/servidor-almacenamiento-platinum",
+  "order": 3
+}
