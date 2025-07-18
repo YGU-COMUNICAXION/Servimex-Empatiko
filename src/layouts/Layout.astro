@@ -17,7 +17,7 @@ const { title, description } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link id="favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -47,3 +47,19 @@ const { title, description } = Astro.props;
     height: 100%;
   }
 </style>
+
+<script is:inline>
+  function updateFavicon() {
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const favicon = document.getElementById("favicon");
+    favicon.href = isDark ? "/favicon-w.png" : "/favicon.png";
+  }
+
+  // Ejecutar en carga
+  updateFavicon();
+
+  // Escuchar cambios de tema del sistema
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", updateFavicon);
+</script>
