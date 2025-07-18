@@ -1,6 +1,8 @@
 {
   "id": "portal-paciente",
   "name": "Portal para Paciente",
+  "slug": "portal-paciente",
+  "type": "Software médico",
   "description": "Plataforma web que permite a pacientes y médicos acceder de manera segura a estudios e informes médicos.",
   "largeDescription": "Plataforma web que permite a pacientes y médicos acceder de manera segura a estudios e informes médicos.",
   "image": "@assets/img/productos/software/portal.png",

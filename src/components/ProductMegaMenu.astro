@@ -1,0 +1,15 @@
+---
+// Página o layout Astro
+import { getCollection } from "astro:content";
+import MegaMenu from "@components/MegaMenu";
+
+const categorias = ["software", "servidores", "monitores", "publicadores"];
+const datos = {};
+for (const c of categorias) {
+  datos[c] = await getCollection(c);
+}
+
+// console.log("Datos del MegaMenu:", datos);
+---
+
+<MegaMenu data={datos} client:load />

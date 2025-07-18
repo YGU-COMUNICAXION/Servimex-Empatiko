@@ -6,7 +6,7 @@
   "category": "Publicadores de USB",
   "description": "Sistema compacto para grabación segura de estudios médicos en USB.",
   "largeDescription": "Sistema RX400 para grabar estudios médicos en memorias USB de forma rápida y sencilla. Ofrece alto rendimiento, más espacio que un CD y mayor compatibilidad. Compacto y fácil de integrar en hospitales y centros de salud.",
-  "image": "/images/productos/publicadores/publicador-usb.png",
+  "image": "@assets/img/productos/publicadores/publicadorUSB.png",
   "features": [
     "Tecnología de última generación con almacenamiento integrado",
     "Protege las memorias USB contra escritura accidental y virus",

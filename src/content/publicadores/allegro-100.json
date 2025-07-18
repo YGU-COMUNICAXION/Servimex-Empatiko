@@ -6,7 +6,7 @@
   "category": "Sistemas de publicación de discos",
   "description": "Publicador de alto volumen de discos médicos, con integración RIS/PACS.",
   "largeDescription": "Permite entregar CD y DVD con estudios médicos a los pacientes de forma sencilla y económica. Los sistemas Allegro se integran fácilmente con RIS/PACS y optimizan el flujo de trabajo DICOM mediante el software Rimage.",
-  "image": "/images/productos/publicadores/allegro-100.png",
+  "image": "@assets/img/productos/publicadores/allegro100.png",
   "features": [
     "Producción autónoma de altos volúmenes de discos",
     "Intuitivo y fácil de operar",

@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Image } from "astro:assets";
 
 import svgLogo from "@assets/img/logo.png";
+import ProductMegaMenu from "@components/ProductMegaMenu.astro";
 
 interface Props {
   type?: "default" | "transparent";
@@ -60,9 +61,16 @@ const { type = "default" } = Astro.props;
         <li>
           <a href={"/"}>Inicio</a>
         </li>
-        <li>
-          <a href={"/productos"}>Productos</a>
+
+        <!-- Versión Mobile -->
+        <li class="lg:!hidden">
+          <a href="/productos">Productos</a>
         </li>
+        <!-- Versión Desktop -->
+        <li class="!hidden lg:!block">
+          <ProductMegaMenu />
+        </li>
+
         <li>
           <a href={"/nosotros"}>Nosotros</a>
         </li>

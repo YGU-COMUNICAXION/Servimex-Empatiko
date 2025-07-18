@@ -6,7 +6,7 @@
   "category": "Accesorios y consumibles",
   "description": "Consumibles para impresoras y publicadores Rimage.",
   "largeDescription": "Obtenga un funcionamiento fiable e ininterrumpido de su sistema Producer. Con cintas y discos optimizados, los kits de medios le dan los resultados más bonitos y duraderos en un paquete práctico.",
-  "image": "/images/productos/publicadores/suministros.png",
+  "image": "@assets/img/productos/publicadores/suministros.png",
   "features": [
     "Calidad insuperable",
     "Resultados confiables",

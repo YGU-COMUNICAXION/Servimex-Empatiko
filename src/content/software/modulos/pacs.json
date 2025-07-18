@@ -1,6 +1,8 @@
 {
   "id": "pacs",
   "name": "PACS",
+  "slug": "pacs",
+  "type": "Software médico",
   "description": "Sistema para almacenar, gestionar y visualizar imágenes médicas de forma centralizada y segura.",
   "largeDescription": "Sistema para almacenar, gestionar y visualizar imágenes médicas de forma centralizada y segura.",
   "image": "@assets/img/productos/software/pacs.png",
