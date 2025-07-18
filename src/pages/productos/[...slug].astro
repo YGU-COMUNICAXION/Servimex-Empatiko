@@ -2,7 +2,8 @@
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
+
+export const prerender = true;
 
 export async function getStaticPaths() {
   const colecciones = await Promise.all([
@@ -16,11 +17,25 @@ export async function getStaticPaths() {
 
   return entradas.map((entry) => ({
     params: { slug: entry.data.slug },
-    props: { entry },
   }));
 }
 
-const { entry } = Astro.props;
+const slug = Astro.params.slug;
+
+const colecciones = await Promise.all([
+  getCollection("software"),
+  getCollection("servidores"),
+  getCollection("monitores"),
+  getCollection("publicadores"),
+]);
+
+const entradas = colecciones.flat();
+const entry = entradas.find((e) => e.data.slug === slug);
+
+if (!entry) {
+  throw new Error(`Producto con slug "${slug}" no encontrado`);
+}
+
 const {
   name,
   type,
@@ -29,18 +44,19 @@ const {
   largeDescription,
   features,
   fullFeatures,
+  fullFeaturesTable,
   url,
 } = entry.data;
 ---
 
 <Layout title={name} description={description}>
-  <section
-    class="bg-[linear-gradient(45deg,_#F4F6F9_0%,_#D8E6F7_100%)]"
-  >
+  <section class="bg-[linear-gradient(45deg,_#F4F6F9_0%,_#D8E6F7_100%)]">
     <div
       class="container flex flex-col md:flex-row items-center justify-between py-8 px-6 lg:px-0 mx-auto"
     >
-      <p class="font-inter text-normal text-secondary-1 text-lg lg:text-xl xl:text-2xl">
+      <p
+        class="font-inter text-normal text-secondary-1 text-lg lg:text-xl xl:text-2xl"
+      >
         {type} | <span class="font-semibold">{name}</span>
       </p>
 
@@ -93,7 +109,7 @@ const {
       </div>
     </div>
 
-    {
+    <!-- {
       fullFeatures && (
         <div class="mt-10 px-2 lg:px-0 font-inter">
           <h2 class="text-[#275071] text-lg lg:text-xl font-semibold mb-2">
@@ -106,6 +122,37 @@ const {
           </ul>
         </div>
       )
-    }
+    } -->
+    <div class="mt-10 px-2 lg:px-0 font-inter">
+      <h2 class="text-secondary-1 text-lg lg:text-xl font-semibold mb-4">
+        Características
+      </h2>
+      {
+        fullFeaturesTable ? (
+          <div class="space-y-3 pl-6">
+            {fullFeaturesTable.map(({ section, items }) => (
+              <div class="font-inter">
+                <h3 class="bg-[#D8E6F7] text-primary-1 text-lg lg:text-xl font-light px-5 py-2 rounded mb-2">
+                  {section}
+                </h3>
+                <ul class="text-[#666666] text-base lg:text-lg font-light list-disc pl-5 space-y-1 mb-5">
+                  {items.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ) : (
+          fullFeatures && (
+            <ul class="text-[#666666] text-base lg:text-lg list-disc pl-6 lg:pl-12 space-y-1">
+              {fullFeatures.map((f) => (
+                <li>{f}</li>
+              ))}
+            </ul>
+          )
+        )
+      }
+    </div>
   </section>
 </Layout>

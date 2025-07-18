@@ -1,0 +1,79 @@
+{
+  "id": "advanced-suite",
+  "slug": "advanced-suite",
+  "name": "Advanced Suite",
+  "type": "Software médico",
+  "category": "Suites completas",
+  "description": "Plataforma integral de gestión del flujo de trabajo de radiología que incluye RIS, PACS y herramientas de diagnóstico.",
+  "largeDescription": "Plataforma integral de gestión del flujo de trabajo de radiología que incluye RIS y Modality Worklist, PACS, portal de entrega de resultados para pacientes y visor DICOM certificado con herramientas de diagnóstico.",
+  "image": "@assets/img/productos/software/advanced-suite.png",
+  "features": [
+    "Configurable para trabajar on premise, cloud e híbrido",
+    "Herramientas avanzadas de diagnóstico",
+    "Integración con sistemas de historia clínica y gestión de recursos",
+    "Certificación FDA, CE, ISO9000"
+  ],
+  "fullFeaturesTable": [
+    {
+      "section": "Gestión",
+      "items": [
+        "PACS (Sistema de Archivo y Comunicación de Imágenes)",
+        "RIS (Sistema de Información Radiológica)",
+        "MWL (Lista de Trabajo de Modalidades)"
+      ]
+    },
+    {
+      "section": "Diagnóstico",
+      "items": [
+        "Visor DICOM MedDream™ certificado (Opcional)",
+        "Generador de reporte (Opcional)"
+      ]
+    },
+    {
+      "section": "Visualización",
+      "items": [
+        "Visor DICOM Lite"
+      ]
+    },
+    {
+      "section": "Exportación",
+      "items": [
+        "Mensajería instantánea WhatsApp™ (Opcional)",
+        "Código QR",
+        "Mensajería SMS",
+        "Correo electrónico"
+      ]
+    },
+    {
+      "section": "Compartir",
+      "items": [
+        "Transferencia de archivos segura",
+        "Portal para paciente"
+      ]
+    },
+    {
+      "section": "Publicación",
+      "items": [
+        "Grabador (CD/DVD/Blu-ray™) (Opcional)",
+        "Almacenamiento USB (Opcional)"
+      ]
+    },
+    {
+      "section": "Seguridad",
+      "items": [
+        "Copias de seguridad Lite",
+        "Copias de seguridad automáticas (Opcional)",
+        "Recuperación de datos (Opcional)"
+      ]
+    },
+    {
+      "section": "Soporte",
+      "items": [
+        "Asistencia al cliente",
+        "Soporte técnico"
+      ]
+    }
+  ],
+  "url": "https://empatiko.mx/contacto",
+  "order": 2
+}

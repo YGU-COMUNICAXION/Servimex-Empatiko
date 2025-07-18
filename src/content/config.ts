@@ -19,6 +19,15 @@ const productsCollection = defineCollection({
       image: image(),
       features: z.array(z.string()),
       fullFeatures: z.array(z.string()).optional(), // Solo algunos productos lo usan
+      fullFeaturesTable: z
+        .array(
+          // Tabla estructurada
+          z.object({
+            section: z.string(), // Título de la sección (ej. "Gestión")
+            items: z.array(z.string()), // Características dentro de la sección
+          })
+        )
+        .optional(),
       url: z.string().url(),
       order: z.number(),
     }),
