@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import caso1Img from "@assets/img/nosotros/caso1.jpg";
 import caso2Img from "@assets/img/nosotros/caso2.jpg";
 import caso3Img from "@assets/img/nosotros/caso3.jpg";
@@ -118,6 +118,12 @@ export default function CasosDeExito() {
   const next = () => setIndex((prev) => (prev + 1) % casos.length);
   const prev = () =>
     setIndex((prev) => (prev - 1 + casos.length) % casos.length);
+
+  // ⏱ Autoplay cada 5 segundos
+  useEffect(() => {
+    const interval = setInterval(next, 5000);
+    return () => clearInterval(interval); // Limpiar intervalo al desmontar
+  }, []);
 
   const caso = casos[index];
 
