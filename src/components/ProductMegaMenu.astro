@@ -1,15 +1,26 @@
 ---
 // Página o layout Astro
-import { getCollection } from "astro:content";
 import MegaMenu from "@components/MegaMenu";
+import {
+  getCollection,
+  type CollectionKey,
+  type CollectionEntry,  
+} from "astro:content";
 
-const categorias = ["software", "servidores", "monitores", "publicadores"];
-const datos = {};
+// const categorias = ["software", "servidores", "monitores", "publicadores"];
+const categorias = [
+  "software",
+  "servidores",
+  "monitores",
+  "publicadores",
+] as const;
+
+type Categoria = (typeof categorias)[number]; // Tipo union: "software" | "servidores" | ...
+
+const datos: Record<Categoria, CollectionEntry<Categoria>[]> = {} as any;
 for (const c of categorias) {
-  datos[c] = await getCollection(c);
+  datos[c] = await getCollection(c); // Ya no habrá error de tipado
 }
-
-// console.log("Datos del MegaMenu:", datos);
 ---
 
 <MegaMenu data={datos} client:load />

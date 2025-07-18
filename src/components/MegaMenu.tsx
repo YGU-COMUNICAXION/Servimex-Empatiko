@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import clsx from "clsx";
+import type { CollectionEntry } from "astro:content";
 
-type Producto = {
-  id: string;
-  data: {
-    name: string;
-    type?: string;
-    image?: string;
-  };
-};
+type Producto =
+  | CollectionEntry<"software">
+  | CollectionEntry<"servidores">
+  | CollectionEntry<"monitores">
+  | CollectionEntry<"publicadores">;
 
 type MegaMenuProps = {
   data: {
     [categoria: string]: Producto[];
   };
+};
+
+const categoryLabels: Record<string, string> = {
+  software: "Software Médico",
+  servidores: "Servidores",
+  monitores: "Monitores de Grado Médico",
+  publicadores: "Publicadores",
 };
 
 const MegaMenu: React.FC<MegaMenuProps> = ({ data }) => {
@@ -55,11 +60,14 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ data }) => {
   };
 
   const renderProductos = (productos: Producto[]) => (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-[420px] transition-all">
+    <div
+      className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4 transition-all
+      duration-300 max-h-[400px] overflow-y-auto min-w-[250px] xl:min-w-[300px]"
+    >
       {productos.map((producto) => (
         <a
           key={producto.id}
-          href={`/productos/${producto.id}`}
+          href={`/productos/${producto.data.slug}`}
           className="block text-center hover:shadow-md hover:bg-gray-50 p-2 rounded-md transition"
         >
           {producto.data.image && (
@@ -93,20 +101,20 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ data }) => {
       {isOpen && (
         <div
           className={clsx(
-            "absolute top-full left-0 bg-white shadow-xl z-50 rounded-xl p-4 flex transition-all duration-500 overflow-hidden",
-            activeCategory && soloDefault
-              ? "w-[700px]"
-              : activeCategory && activeSubcategory
-              ? "w-[900px]"
-              : activeCategory
-              ? "w-[440px]"
-              : "w-[260px]"
+            "absolute top-full left-0 bg-white shadow-xl z-50 rounded-xl p-4 flex transition-all duration-500 overflow-hidden"
+            // activeCategory && soloDefault
+            //   ? "max-w-[880px]"
+            //   : activeCategory && activeSubcategory
+            //   ? "max-w-[1000px]"
+            //   : activeCategory
+            //   ? "max-w-[600px]"
+            //   : "max-w-[560px]"
           )}
         >
           {/* Categorías */}
           <div
             className={clsx(
-              "flex flex-col gap-2 pr-4 min-w-[240px]",
+              "flex flex-col gap-2 pr-4 min-w-[300px] xl:min-w-[350px] max-w-[400px]",
               activeCategory && "border-r border-gray-200"
             )}
           >
@@ -115,13 +123,14 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ data }) => {
                 key={categoria}
                 onClick={() => handleCategoryClick(categoria)}
                 className={clsx(
-                  "cursor-pointer p-3 rounded-xl text-primary-1 font-medium hover:bg-blue-50 transition",
+                  `cursor-pointer p-5 rounded-xl
+                  text-secondary-1 text-start text-base font-inter font-medium hover:bg-blue-50 transition`,
                   {
                     "bg-blue-100 font-semibold": activeCategory === categoria,
                   }
                 )}
               >
-                {categoria}
+                {categoryLabels[categoria] ?? categoria}
               </div>
             ))}
           </div>
@@ -150,9 +159,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ data }) => {
                         key={subcat}
                         onClick={() => handleSubcategoryClick(subcat)}
                         className={clsx(
-                          "cursor-pointer p-3 rounded-xl text-gray-600 font-medium hover:bg-blue-50 transition",
+                          `cursor-pointer p-3 rounded-xl font-inter text-base
+                          text-gray-600 font-light hover:bg-blue-50 transition`,
                           {
-                            "bg-blue-100 font-semibold text-primary-1":
+                            "bg-blue-100 font-medium text-primary-1":
                               activeSubcategory === subcat,
                           }
                         )}
