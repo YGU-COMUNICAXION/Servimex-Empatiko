@@ -42,6 +42,7 @@ const filesData: Record<string, FileItem[]> = {
   Monitores: [
     { nombre: "C310S", link: "#" },
     { nombre: "C510S", link: "#" },
+    { nombre: "C22S+", link: "#" },
     { nombre: "Política de garantía", link: "#" },
   ],
   Publicador: [

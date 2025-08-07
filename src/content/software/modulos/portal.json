@@ -6,7 +6,7 @@
   "description": "Plataforma web que permite a pacientes y médicos acceder de manera segura a estudios e informes médicos.",
   "largeDescription": "Plataforma web que permite a pacientes y médicos acceder de manera segura a estudios e informes médicos.",
   "image": "@assets/img/productos/software/portal.png",
-  "category": "Software Médico",
+  "category": "Módulos",
   "features": [
     "Envío mediante WhatsApp, e-mail y otras opciones",
     "Optimización de recursos",
@@ -20,5 +20,5 @@
     "Entrega unificada de resultados de radiología y laboratorio."
   ],
   "url": "https://drive.google.com/file/d/EXAMPLE_PORTAL",
-  "order": 3
+  "order": 4
 }

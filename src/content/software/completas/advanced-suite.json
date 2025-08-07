@@ -3,7 +3,7 @@
   "slug": "advanced-suite",
   "name": "Advanced Suite",
   "type": "Software médico",
-  "category": "Suites completas",
+  "category": "Completas",
   "description": "Plataforma integral de gestión del flujo de trabajo de radiología que incluye RIS, PACS y herramientas de diagnóstico.",
   "largeDescription": "Plataforma integral de gestión del flujo de trabajo de radiología que incluye RIS y Modality Worklist, PACS, portal de entrega de resultados para pacientes y visor DICOM certificado con herramientas de diagnóstico.",
   "image": "@assets/img/productos/software/advanced-suite.png",

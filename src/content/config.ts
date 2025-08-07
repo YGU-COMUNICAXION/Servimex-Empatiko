@@ -13,7 +13,7 @@ const productsCollection = defineCollection({
         "Monitores de Grado Médico",
         "Publicadores",
       ]),
-      category: z.string(), // Puedes definir un enum si quieres limitar categorías específicas
+      category: z.string().optional(), // Puedes definir un enum si quieres limitar categorías específicas
       description: z.string(),
       largeDescription: z.string(),
       image: image(),

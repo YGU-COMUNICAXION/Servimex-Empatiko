@@ -3,7 +3,7 @@
   "slug": "workstation-enterprise",
   "name": "Workstation Enterprise",
   "type": "Servidores",
-  "category": "Workstation",
+  "category": "WORKSTATION",
   "description": "Estación compacta de alto rendimiento con memoria ampliada, GPU profesional y conectividad avanzada.",
   "largeDescription": "Ideal para diagnóstico, interpretación de estudios y multitarea en entornos médicos exigentes.",
   "image": "@assets/img/productos/servidores/workstation.png",

@@ -3,7 +3,7 @@
   "slug": "rimage-catalyst",
   "name": "Rimage Catalyst",
   "type": "Publicadores",
-  "category": "Sistemas de publicación de discos",
+  "category": "",
   "description": "Producción de discos personalizados a todo color con datos médicos.",
   "largeDescription": "El sistema Catalyst permite producir discos personalizados a todo color con datos médicos, incluyendo nombre del paciente, examen y más. Su software automatiza el proceso para mayor rapidez y precisión.",
   "image": "@assets/img/productos/publicadores/rimage-catalyst.png",

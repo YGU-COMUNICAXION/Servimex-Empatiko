@@ -3,7 +3,7 @@
   "slug": "almacenamiento-platinum",
   "name": "Servidor Almacenamiento Platinum",
   "type": "Servidores",
-  "category": "Histórico",
+  "category": "HISTÓRICO",
   "description": "Alta capacidad y rendimiento para archivar grandes volúmenes de datos médicos.",
   "largeDescription": "Diseñado para archivar grandes volúmenes de datos médicos históricos, ofrece alto rendimiento, gran capacidad y confiabilidad. Incorpora procesamiento potente, conectividad veloz y almacenamiento híbrido SSD/disco duro para entornos clínicos exigentes.",
   "image": "@assets/img/productos/servidores/almacenamiento.png",

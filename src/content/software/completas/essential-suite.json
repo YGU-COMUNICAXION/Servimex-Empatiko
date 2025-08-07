@@ -3,7 +3,7 @@
   "slug": "essential-suite",
   "name": "Essential Suite",
   "type": "Software médico",
-  "category": "Suites completas",
+  "category": "Completas",
   "description": "Plataforma para administrar, diagnosticar y compartir archivos médicos DICOM.",
   "largeDescription": "Plataforma con todo lo necesario para administrar, diagnosticar y compartir archivos médicos DICOM.",
   "image": "@assets/img/productos/software/essential-suite.png",

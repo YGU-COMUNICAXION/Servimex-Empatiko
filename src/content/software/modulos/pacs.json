@@ -6,7 +6,7 @@
   "description": "Sistema para almacenar, gestionar y visualizar imágenes médicas de forma centralizada y segura.",
   "largeDescription": "Sistema para almacenar, gestionar y visualizar imágenes médicas de forma centralizada y segura.",
   "image": "@assets/img/productos/software/pacs.png",
-  "category": "Software Médico",
+  "category": "Módulos",
   "features": [
     "Configurable para trabajar on premise, cloud e híbrido",
     "Herramientas avanzadas de diagnóstico",
