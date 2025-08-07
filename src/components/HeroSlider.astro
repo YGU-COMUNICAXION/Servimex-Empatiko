@@ -115,51 +115,53 @@ const slides = [
 </section>
 
 <script>
-  const slides = document.querySelectorAll("[data-slide]");
-  const buttons = document.querySelectorAll("[data-index]");
-  const prevBtn = document.getElementById(
-    "prev-slide"
-  ) as HTMLButtonElement | null;
-  const nextBtn = document.getElementById(
-    "next-slide"
-  ) as HTMLButtonElement | null;
-  let current = 0;
+  document.addEventListener("astro:page-load", () => {
+    const slides = document.querySelectorAll("[data-slide]");
+    const buttons = document.querySelectorAll("[data-index]");
+    const prevBtn = document.getElementById(
+      "prev-slide"
+    ) as HTMLButtonElement | null;
+    const nextBtn = document.getElementById(
+      "next-slide"
+    ) as HTMLButtonElement | null;
+    let current = 0;
 
-  const showSlide = (index: number) => {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle("opacity-100", i === index);
-      slide.classList.toggle("z-10", i === index);
-      slide.classList.toggle("opacity-0", i !== index);
-      slide.classList.toggle("z-0", i !== index);
+    const showSlide = (index: number) => {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("opacity-100", i === index);
+        slide.classList.toggle("z-10", i === index);
+        slide.classList.toggle("opacity-0", i !== index);
+        slide.classList.toggle("z-0", i !== index);
+      });
+
+      if (prevBtn && nextBtn) {
+        prevBtn.disabled = index === 0;
+        nextBtn.disabled = index === slides.length - 1;
+      }
+
+      current = index;
+    };
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const index = parseInt((btn as HTMLElement).dataset.index as string);
+        showSlide(index);
+      });
     });
 
-    if (prevBtn && nextBtn) {
-      prevBtn.disabled = index === 0;
-      nextBtn.disabled = index === slides.length - 1;
-    }
-
-    current = index;
-  };
-
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const index = parseInt((btn as HTMLElement).dataset.index as string);
-      showSlide(index);
+    prevBtn?.addEventListener("click", () => {
+      if (current > 0) showSlide(current - 1);
     });
+
+    nextBtn?.addEventListener("click", () => {
+      if (current < slides.length - 1) showSlide(current + 1);
+    });
+
+    setInterval(() => {
+      const next = (current + 1) % slides.length;
+      showSlide(next);
+    }, 8000);
+
+    showSlide(current);
   });
-
-  prevBtn?.addEventListener("click", () => {
-    if (current > 0) showSlide(current - 1);
-  });
-
-  nextBtn?.addEventListener("click", () => {
-    if (current < slides.length - 1) showSlide(current + 1);
-  });
-
-  // setInterval(() => {
-  //   const next = (current + 1) % slides.length;
-  //   showSlide(next);
-  // }, 8000);
-
-  showSlide(current);
 </script>

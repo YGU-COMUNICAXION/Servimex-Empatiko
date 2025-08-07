@@ -51,17 +51,19 @@ const { title, description } = Astro.props;
 </style>
 
 <script is:inline>
-  function updateFavicon() {
-    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const favicon = document.getElementById("favicon");
-    favicon.href = isDark ? "/favicon-w.png" : "/favicon.png";
-  }
+  document.addEventListener("astro:page-load", () => {
+    function updateFavicon() {
+      const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const favicon = document.getElementById("favicon");
+      favicon.href = isDark ? "/favicon-w.png" : "/favicon.png";
+    }
 
-  // Ejecutar en carga
-  updateFavicon();
+    // Ejecutar en carga
+    updateFavicon();
 
-  // Escuchar cambios de tema del sistema
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", updateFavicon);
+    // Escuchar cambios de tema del sistema
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", updateFavicon);
+  });
 </script>

@@ -71,7 +71,7 @@ export default function DownloadsTabs() {
                 onClick={() => setActiveTab(tab)}
                 className={`w-full px-4 py-3
                   text-left font-semibold
-                  rounded-full md:rounded-r-none
+                  rounded-full md:rounded-r-none hover:cursor-pointer
                   flex items-center justify-between transition-all duration-300 relative z-10 ${
                     activeTab === tab
                       ? "bg-[#45A39D] text-white shadow-lg"
