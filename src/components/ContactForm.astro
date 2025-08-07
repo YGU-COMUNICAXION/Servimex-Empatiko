@@ -1,5 +1,10 @@
 ---
-const { variant = "section" } = Astro.props;
+interface Props {
+  variant?: "modal" | "section";
+  product?: string;
+}
+
+const { variant = "section", product } = Astro.props;
 
 const wrapperClass =
   variant === "modal" ? "rounded-lg px-4 py-6 md:px-6 md:py-8" : "bg-white";
@@ -33,6 +38,8 @@ const inputClass =
           class={`${inputClass} resize-none`}
           placeholder="Me interesa recibir una cotización para el modelo. Quedo atento(a) a su respuesta. Saludos cordiales"
         />
+
+        {product && <input type="hidden" name="product" value={product} />}
       </div>
     )
   }
@@ -140,7 +147,7 @@ const inputClass =
   </div>
 
   <div class="flex justify-end gap-4 pt-2">
-    {
+    <!-- {
       variant === "modal" && (
         <button
           type="button"
@@ -150,11 +157,11 @@ const inputClass =
           CANCELAR
         </button>
       )
-    }
+    } -->
 
     <button
       type="submit"
-      class="bg-primary-1 text-primary-3 px-6 py-2 rounded-full font-normal text-lg lg:text-xl hover:cursor-pointer hover:bg-primary-2"
+      class="bg-primary-1 text-primary-3 px-6 py-2 rounded-full font-normal text-lg hover:cursor-pointer hover:bg-primary-2"
     >
       ENVIAR
     </button>

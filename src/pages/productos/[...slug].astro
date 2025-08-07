@@ -1,4 +1,5 @@
 ---
+import ContactForm from "@components/ContactForm.astro";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
@@ -99,30 +100,20 @@ const {
         >
           {features.map((f) => <li>{f}</li>)}
         </ul>
-        <a
-          href={url}
-          target="_blank"
+        <button
+          id="quote-btn"
           class="inline-block mt-4 px-6 py-1 bg-primary-1 text-[#F7F7F7] rounded-full
-          text-base lg:text-lg font-normal font-inter"
-          >COTIZA</a
+          text-base lg:text-lg font-normal font-inter hover:cursor-pointer hover:bg-primary-2 transition"
+          >COTIZA</button
         >
       </div>
     </div>
 
-    <!-- {
-      fullFeatures && (
-        <div class="mt-10 px-2 lg:px-0 font-inter">
-          <h2 class="text-[#275071] text-lg lg:text-xl font-semibold mb-2">
-            Características
-          </h2>
-          <ul class="text-[#4F5B67] text-base lg:text-lg list-disc pl-8 lg:pl-12 space-y-1">
-            {fullFeatures.map((f) => (
-              <li>{f}</li>
-            ))}
-          </ul>
-        </div>
-      )
-    } -->
+    <!-- Contact Form (oculto inicialmente) -->
+    <div id="contact-form" class="hidden container py-8 md:px-0 mx-auto">
+      <ContactForm variant="modal" product={name} />
+    </div>
+
     <div class="mt-10 px-2 lg:px-0 font-inter">
       <h2 class="text-secondary-1 text-lg lg:text-xl font-semibold mb-4">
         Características
@@ -156,3 +147,19 @@ const {
     </div>
   </section>
 </Layout>
+
+<!-- Script para mostrar/ocultar el formulario -->
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const quoteBtn = document.getElementById("quote-btn");
+    if (quoteBtn) {
+      quoteBtn.addEventListener("click", () => {
+        const form = document.getElementById("contact-form");
+        if (form) {
+          form.classList.toggle("hidden");
+          form.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    }
+  });
+</script>
