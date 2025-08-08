@@ -3,7 +3,6 @@
   "slug": "c22s-plus",
   "name": "C22S+",
   "type": "Monitores de Grado Médico",
-
   "description": "Monitor clínico de 2 megapíxeles con retroiluminación estabilizada y tecnología de bajo consumo.",
   "largeDescription": "Monitor de 2 megapíxeles con tecnología de estabilización de retroiluminación, calidad constante y adaptación automática a la luz ambiental. Ideal para diagnóstico clínico y visualización de imágenes médicas en sistemas PACS.",
   "image": "@assets/img/productos/monitores/C22S+.png",
@@ -25,6 +24,6 @@
     "Brillo máximo: 1000 cd/m²",
     "Contraste típico: 1800:1"
   ],
-  "url": "https://empatiko.mx/productos/monitores/c22s-plus",
+  "url": "https://drive.google.com/file/d/1VMjM3i1Iadw2egJsMpeJ9SXrAAx6OdjG/view?usp=drive_link",
   "order": 1
 }

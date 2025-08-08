@@ -1,0 +1,34 @@
+{
+  "id": "workstation-platinum",
+  "slug": "workstation-platinum",
+  "name": "Workstation Platinum",
+  "type": "Servidores",
+  "category": "WORKSTATION",
+  "description": "Estación de trabajo de alto rendimiento con procesador Intel i7 de 14ª generación, GPU profesional y almacenamiento NVMe.",
+  "largeDescription": "Ideal para diagnóstico en imagenología y tareas médicas exigentes. Incluye conectividad inalámbrica, unidad óptica, TPM y sistema operativo profesional.",
+  "image": "@assets/img/productos/servidores/workstation.png",
+  "features": [
+    "Intel i7-14700 con 28 hilos para tareas simultáneas",
+    "32GB RAM + 1TB NVMe para respuesta inmediata",
+    "Unidad óptica DVDRW para respaldo físico de estudios",
+    "Conectividad completa + tarjeta PCIe USB con energía",
+    "Seguridad TPM + gabinete profesional ventilado",
+    "Plataforma robusta para manejo de pacientes y reportes",
+    "5 años de garantía para continuidad operativa",
+    "Ideal para áreas administrativas o quirófanos"
+  ],
+  "fullFeatures": [
+    "Procesador Intel Core i7 de 14ª generación (8 núcleos de rendimiento + 12 de eficiencia, 28 hilos)",
+    "32 GB de memoria DDR4",
+    "SSD NVMe PCIe 4.0 de 1 TB",
+    "Tarjeta gráfica NVIDIA A400 profesional",
+    "Unidad óptica DVD-RW SATA",
+    "Red LAN integrada",
+    "WiFi 6 y Bluetooth",
+    "Seguridad con TPM SPI",
+    "Windows 11 Pro OEM",
+    "Garantía extendida de 5 años"
+  ],
+  "url": "https://drive.google.com/file/d/1GNdX95iPLMmFPAJzGjsfTxLlFZZrb2OF/view?usp=drive_link",
+  "order": 4
+}

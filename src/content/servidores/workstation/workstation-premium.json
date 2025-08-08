@@ -1,0 +1,33 @@
+{
+  "id": "workstation-premium",
+  "slug": "workstation-premium",
+  "name": "Workstation Premium",
+  "type": "Servidores",
+  "category": "WORKSTATION",
+  "description": "Estación compacta de alto poder de procesamiento con gráficos profesionales y almacenamiento NVMe.",
+  "largeDescription": "Ideal para radiólogos y usuarios de aplicaciones médicas exigentes como reconstrucción 3D. Incluye conectividad inalámbrica, TPM, lector óptico y sistema operativo profesional.",
+  "image": "@assets/img/productos/servidores/workstation.png",
+  "features": [
+    "Procesador Intel i7-12700 con 20 hilos",
+    "32GB RAM DDR4 para multitarea con imágenes de alta resolución",
+    "SSD NVMe de 1TB para carga ultrarrápida de estudios",
+    "GPU NVIDIA A400 con soporte multimonitor DICOM",
+    "TPM 2.0 para seguridad clínica y cifrado",
+    "Conectividad total: WiFi 6, Bluetooth y LAN",
+    "Garantía extendida de 5 años con soporte dedicado",
+    "Estación ideal para radiólogos"
+  ],
+  "fullFeatures": [
+    "Procesador Intel Core i7 de 12ª generación (8 núcleos de rendimiento + 4 de eficiencia, 20 hilos)",
+    "32 GB de memoria DDR4",
+    "Almacenamiento NVMe PCIe 4.0 de 1 TB",
+    "Gráficos profesionales NVIDIA A400",
+    "Unidad óptica DVD-RW",
+    "Seguridad con TPM SPI",
+    "WiFi 6 y Bluetooth",
+    "Sistema operativo Windows 11 Pro",
+    "Garantía extendida de 5 años"
+  ],
+  "url": "https://drive.google.com/file/d/1LHfZXAz31eAE0Hj9yr19TZJL3aM_2j2B/view?usp=drive_link",
+  "order": 5
+}
