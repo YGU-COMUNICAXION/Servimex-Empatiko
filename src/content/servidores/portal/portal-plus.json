@@ -3,7 +3,7 @@
   "slug": "portal-plus",
   "name": "Portal Plus",
   "type": "Servidores",
-  "category": "PORTAL",
+  "category": "Portal",
   "description": "Alto rendimiento para entornos con muchas consultas y acceso rápido al portal del paciente.",
   "largeDescription": "Ideal para entornos con muchas consultas, ofrece acceso rápido y fluido al portal del paciente. Asegura alto rendimiento en la entrega de imágenes, con administración remota y protección de datos.",
   "image": "@assets/img/productos/servidores/ris.png",

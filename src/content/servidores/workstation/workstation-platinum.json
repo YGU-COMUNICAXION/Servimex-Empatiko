@@ -3,7 +3,7 @@
   "slug": "workstation-platinum",
   "name": "Workstation Platinum",
   "type": "Servidores",
-  "category": "WORKSTATION",
+  "category": "Workstation",
   "description": "Estación de trabajo de alto rendimiento con procesador Intel i7 de 14ª generación, GPU profesional y almacenamiento NVMe.",
   "largeDescription": "Ideal para diagnóstico en imagenología y tareas médicas exigentes. Incluye conectividad inalámbrica, unidad óptica, TPM y sistema operativo profesional.",
   "image": "@assets/img/productos/servidores/workstation.png",

@@ -3,7 +3,7 @@
   "slug": "workstation-plus",
   "name": "Workstation Plus",
   "type": "Servidores",
-  "category": "WORKSTATION",
+  "category": "Workstation",
   "description": "Estación compacta con procesador Intel i7 de 14ª generación, ideal para gestión hospitalaria y acceso a RIS/PACS.",
   "largeDescription": "Ofrece conectividad avanzada, soporte TPM y sistema operativo profesional.",
   "image": "@assets/img/productos/servidores/workstation.png",

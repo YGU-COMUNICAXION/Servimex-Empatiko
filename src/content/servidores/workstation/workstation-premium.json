@@ -3,7 +3,7 @@
   "slug": "workstation-premium",
   "name": "Workstation Premium",
   "type": "Servidores",
-  "category": "WORKSTATION",
+  "category": "Workstation",
   "description": "Estación compacta de alto poder de procesamiento con gráficos profesionales y almacenamiento NVMe.",
   "largeDescription": "Ideal para radiólogos y usuarios de aplicaciones médicas exigentes como reconstrucción 3D. Incluye conectividad inalámbrica, TPM, lector óptico y sistema operativo profesional.",
   "image": "@assets/img/productos/servidores/workstation.png",

@@ -3,7 +3,7 @@
   "slug": "almacenamiento-plus",
   "name": "Servidor Almacenamiento Plus",
   "type": "Servidores",
-  "category": "HISTÓRICO",
+  "category": "Histórico",
   "description": "Solución robusta para almacenar grandes volúmenes de datos clínicos a largo plazo.",
   "largeDescription": "Ofrece redundancia, velocidad y disponibilidad continua, con opción de personalización total gracias a la ausencia de sistema operativo preinstalado.",
   "image": "@assets/img/productos/servidores/almacenamiento.png",

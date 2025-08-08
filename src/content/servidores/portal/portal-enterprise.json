@@ -3,7 +3,7 @@
   "slug": "portal-enterprise",
   "name": "Portal Enterprise",
   "type": "Servidores",
-  "category": "PORTAL",
+  "category": "Portal",
   "description": "Procesamiento clínico web de alto nivel, rápido y confiable para acceso a estudios e informes médicos.",
   "largeDescription": "Permite a los pacientes acceder de forma segura a sus estudios e informes desde cualquier dispositivo con Internet. Brinda alta disponibilidad, rapidez y seguridad para una experiencia confiable y protegida.",
   "image": "@assets/img/productos/servidores/ris.png",

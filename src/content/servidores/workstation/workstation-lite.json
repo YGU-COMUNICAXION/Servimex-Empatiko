@@ -3,7 +3,7 @@
   "slug": "workstation-lite",
   "name": "Workstation Lite",
   "type": "Servidores",
-  "category": "WORKSTATION",
+  "category": "Workstation",
   "description": "Estación de trabajo compacta y potente, ideal para entornos clínicos o administrativos.",
   "largeDescription": "Equipada con procesador Intel i5, almacenamiento rápido y conectividad moderna, perfecta para consulta de informes, acceso a sistemas médicos y gestión de usuarios.",
   "image": "@assets/img/productos/servidores/workstation.png",
