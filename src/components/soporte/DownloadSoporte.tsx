@@ -8,8 +8,8 @@ interface FileItem {
 
 const filesData: Record<string, FileItem[]> = {
   "Software médicos": [
-    { nombre: "Essential Suite", link: "#" },
-    { nombre: "Advanced Suite", link: "#" },
+    { nombre: "Essential Suite", link: "https://drive.google.com/file/d/1bQ4nUH95XfY4sqjv_xGOvQimB78Wz1cH/view?usp=drive_link" },
+    { nombre: "Advanced Suite", link: "https://drive.google.com/file/d/16KvSIOrYsk77eZnUwF0MqOcIj72qGS1I/view?usp=drive_link" },
     {
       nombre: "RIS",
       link: "https://drive.google.com/file/d/1vJ8DwjtamwGy4G9pdh_CmNbr1m_66cZy/view?usp=drive_link",
@@ -110,6 +110,10 @@ const filesData: Record<string, FileItem[]> = {
   ],
   Monitores: [
     {
+      nombre: "C22S+",
+      link: "https://drive.google.com/file/d/1VMjM3i1Iadw2egJsMpeJ9SXrAAx6OdjG/view?usp=drive_link",
+    },
+    {
       nombre: "C310S",
       link: "https://drive.google.com/file/d/1vCJ10uXot-thg70DdxP5yFBGFT8ThkMP/view?usp=drive_link",
     },
@@ -117,10 +121,7 @@ const filesData: Record<string, FileItem[]> = {
       nombre: "C510S",
       link: "https://drive.google.com/file/d/1FZJHZZQCVv-hebv2hh6IXVDyS42pFYnl/view?usp=drive_link",
     },
-    {
-      nombre: "C22S+",
-      link: "https://drive.google.com/file/d/1VMjM3i1Iadw2egJsMpeJ9SXrAAx6OdjG/view?usp=drive_link",
-    },
+
     { nombre: "Política de garantía", link: "#" },
   ],
   Publicador: [

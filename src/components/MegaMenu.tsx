@@ -30,12 +30,12 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ data }) => {
 
   // Mapa manual de orden para subcategorías
   const subcategoryOrderMap: Record<string, number> = {
-    risPacs: 1,
-    ris: 2,
-    pacs: 3,
-    portal: 4,
-    historico: 5,
-    workstation: 6,
+    "RIS/PACS": 1,
+    RIS: 2,
+    PACS: 3,
+    Portal: 4,
+    Histórico: 5,
+    Workstation: 6,
   };
 
   const handleMouseEnterMenu = () => {
@@ -106,6 +106,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ data }) => {
     const ob = subcategoryOrderMap[b] ?? Number.MAX_SAFE_INTEGER;
     return oa - ob;
   });
+
   const soloUnaSub = orderedSubKeys.length <= 1;
   const firstKey = orderedSubKeys[0];
 
