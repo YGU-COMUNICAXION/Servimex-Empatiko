@@ -34,8 +34,9 @@ Mi participacion se enfoco en la maquetacion con Astro, React y Tailwind CSS, or
 
 ## Fecha de referencia
 
-- Primer commit visible en este clon: 2026-06-18.
-- Commit de referencia: `d28eb3a`.
+- Primer commit del repositorio: 2025-07-10.
+- Commit de referencia: `9b958c0`.
+- Primer commit funcional de mi autoria: 2025-07-10, commit `5e68488`.
 
 ## Notas para portafolio
 
