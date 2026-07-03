@@ -4,9 +4,15 @@
 
 https://poetic-paprenjak-0efdde.netlify.app/
 
-## Descripcion
+## Resumen
 
-Sitio web para Empatiko, desarrollado dentro del conjunto de proyectos de Servimex. Presenta informacion de marca, propuesta comercial y formulario de contacto.
+Sitio web comercial y catalogo para Empatiko, desarrollado dentro del ecosistema de marcas Servimex. A diferencia de una landing sencilla, este proyecto incluye multiples rutas, catalogo de productos, distribuidores, soporte, contacto y paginas internas.
+
+## Rol
+
+Desarrollado por Jonathan Alexis Bello Lopez.
+
+Mi participacion se enfoco en la maquetacion con Astro, React y Tailwind CSS, organizacion del catalogo, estructura de rutas internas, componentes reutilizables e integraciones de contacto.
 
 ## Tecnologias usadas
 
@@ -15,20 +21,22 @@ Sitio web para Empatiko, desarrollado dentro del conjunto de proyectos de Servim
 - Tailwind CSS
 - Heroicons
 - Nodemailer
-
-## Requisitos
-
-- Node.js 18+
-- npm
-- Configuracion SMTP si se usa el envio de correos con Nodemailer
+- Formspree
+- HubSpot Meetings
 
 ## Retos tecnicos
 
-- Integrar envio de correos desde el sitio.
-- Construir una landing responsive con formularios y llamados a la accion.
+- Ordenar un catalogo de productos con varias categorias y paginas de detalle.
+- Crear una navegacion clara para productos, distribuidores, soporte, nosotros y contacto.
 - Separar contenido y componentes para mantener el proyecto facil de modificar.
-- Preparar despliegue estatico en Netlify.
+- Integrar puntos de contacto comercial mediante formulario y agenda.
+- Preparar el despliegue estatico en Netlify.
 
-## Creditos
+## Fecha de referencia
 
-Desarrollado por Jonathan Alexis Bello Lopez.
+- Primer commit visible en este clon: 2026-06-18.
+- Commit de referencia: `d28eb3a`.
+
+## Notas para portafolio
+
+Empatiko debe mostrarse como proyecto web independiente. Su valor principal esta en la organizacion de contenido, catalogo, rutas internas y maquetacion de una experiencia comercial mas amplia que una landing.
